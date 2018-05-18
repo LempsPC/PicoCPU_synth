@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/lembitu.valdmets/PicoCPU_synth/TopLevel.ncd
+OUTFILE=/home/lembitu.valdmets/PicoCPU_synth/TopLevel.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/home/lembitu.valdmets/PicoCPU_synth
+LICENSE=ISE
+USER_INFO=174123256_177724473_210552576_926

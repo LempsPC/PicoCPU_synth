@@ -1,0 +1,127 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/cad/x_14/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n 3
+-fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf
+
+Design file:              TopLevel.ncd
+Physical constraint file: TopLevel.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock ClockSrc
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+rst         |    6.960(R)|      SLOW  |    4.270(R)|      SLOW  |SystemClk_BUFG    |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+rst         |    7.047(R)|      SLOW  |    4.199(R)|      SLOW  |SystemClk_BUFG    |   0.000|
+            |    1.552(R)|      SLOW  |   -0.833(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock ClockSrc to Pad
+-------------+-----------------+------------+-----------------+------------+------------------+--------+
+             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination  |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+-------------+-----------------+------------+-----------------+------------+------------------+--------+
+FlagOutput<0>|        12.228(R)|      SLOW  |         7.117(R)|      FAST  |SystemClk_BUFG    |   0.000|
+FlagOutput<1>|        12.628(R)|      SLOW  |         7.375(R)|      FAST  |SystemClk_BUFG    |   0.000|
+FlagOutput<2>|        12.745(R)|      SLOW  |         7.456(R)|      FAST  |SystemClk_BUFG    |   0.000|
+FlagOutput<3>|        12.058(R)|      SLOW  |         7.044(R)|      FAST  |SystemClk_BUFG    |   0.000|
+SevenSeg<0>  |        16.954(R)|      SLOW  |         8.096(R)|      FAST  |SystemClk_BUFG    |   0.000|
+SevenSeg<1>  |        16.901(R)|      SLOW  |         8.048(R)|      FAST  |SystemClk_BUFG    |   0.000|
+SevenSeg<2>  |        16.469(R)|      SLOW  |         7.963(R)|      FAST  |SystemClk_BUFG    |   0.000|
+SevenSeg<3>  |        16.658(R)|      SLOW  |         8.080(R)|      FAST  |SystemClk_BUFG    |   0.000|
+SevenSeg<4>  |        16.699(R)|      SLOW  |         8.117(R)|      FAST  |SystemClk_BUFG    |   0.000|
+SevenSeg<5>  |        16.819(R)|      SLOW  |         8.193(R)|      FAST  |SystemClk_BUFG    |   0.000|
+SevenSeg<6>  |        16.665(R)|      SLOW  |         8.121(R)|      FAST  |SystemClk_BUFG    |   0.000|
+-------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock clk to Pad
+-------------+-----------------+------------+-----------------+------------+------------------+--------+
+             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination  |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+-------------+-----------------+------------+-----------------+------------+------------------+--------+
+AN<0>        |         7.354(R)|      SLOW  |         3.734(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+AN<1>        |         7.325(R)|      SLOW  |         3.713(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+AN<2>        |         7.670(R)|      SLOW  |         3.928(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+AN<3>        |         7.490(R)|      SLOW  |         3.785(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+FlagOutput<0>|        12.157(R)|      SLOW  |         6.983(R)|      FAST  |SystemClk_BUFG    |   0.000|
+FlagOutput<1>|        12.557(R)|      SLOW  |         7.241(R)|      FAST  |SystemClk_BUFG    |   0.000|
+FlagOutput<2>|        12.674(R)|      SLOW  |         7.322(R)|      FAST  |SystemClk_BUFG    |   0.000|
+FlagOutput<3>|        11.987(R)|      SLOW  |         6.910(R)|      FAST  |SystemClk_BUFG    |   0.000|
+SevenSeg<0>  |        16.883(R)|      SLOW  |         7.962(R)|      FAST  |SystemClk_BUFG    |   0.000|
+             |        10.722(R)|      SLOW  |         4.293(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+SevenSeg<1>  |        16.830(R)|      SLOW  |         7.914(R)|      FAST  |SystemClk_BUFG    |   0.000|
+             |        10.669(R)|      SLOW  |         4.245(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+SevenSeg<2>  |        16.398(R)|      SLOW  |         7.829(R)|      FAST  |SystemClk_BUFG    |   0.000|
+             |        10.237(R)|      SLOW  |         4.160(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+SevenSeg<3>  |        16.587(R)|      SLOW  |         7.946(R)|      FAST  |SystemClk_BUFG    |   0.000|
+             |        10.426(R)|      SLOW  |         4.277(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+SevenSeg<4>  |        16.628(R)|      SLOW  |         7.983(R)|      FAST  |SystemClk_BUFG    |   0.000|
+             |        10.467(R)|      SLOW  |         4.314(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+SevenSeg<5>  |        16.748(R)|      SLOW  |         8.059(R)|      FAST  |SystemClk_BUFG    |   0.000|
+             |        10.587(R)|      SLOW  |         4.390(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+SevenSeg<6>  |        16.594(R)|      SLOW  |         7.987(R)|      FAST  |SystemClk_BUFG    |   0.000|
+             |        10.433(R)|      SLOW  |         4.299(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+-------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock ClockSrc
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ClockSrc       |   14.913|         |         |         |
+clk            |   14.913|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ClockSrc       |   14.913|         |         |         |
+clk            |   14.913|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri May 18 14:16:44 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 425 MB
+
+
+

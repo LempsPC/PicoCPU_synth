@@ -1,0 +1,1206 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: TopLevel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TopLevel.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TopLevel"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : TopLevel
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/FullAdder.vhd" into library work
+Parsing entity <FullAdderSub>.
+Parsing architecture <Behavioral> of entity <fulladdersub>.
+Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/Adder.vhd" into library work
+Parsing entity <Adder_Sub>.
+Parsing architecture <RTL> of entity <adder_sub>.
+Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/RegisterFile.vhd" into library work
+Parsing entity <RegisterFile>.
+Parsing architecture <Behavioral> of entity <registerfile>.
+Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <RTL> of entity <alu>.
+Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/Memory.vhd" into library work
+Parsing entity <Mem>.
+Parsing architecture <beh> of entity <mem>.
+Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/InstMem.vhd" into library work
+Parsing entity <InstMem>.
+Parsing architecture <behavioral> of entity <instmem>.
+Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/DPU.vhd" into library work
+Parsing entity <DPU>.
+Parsing architecture <RTL> of entity <dpu>.
+Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/Controller.vhd" into library work
+Parsing entity <ControlUnit>.
+Parsing architecture <RTL> of entity <controlunit>.
+Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/VectorToSevenSeg.vhd" into library work
+Parsing entity <VectorToSevenSeg>.
+Parsing architecture <Behavioral> of entity <vectortosevenseg>.
+Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/PicoCPU.vhd" into library work
+Parsing entity <PicoCPU>.
+Parsing architecture <RTL> of entity <picocpu>.
+Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/Debouncer.vhd" into library work
+Parsing entity <Debouncer>.
+Parsing architecture <Behavioral> of entity <debouncer>.
+Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/TopLevel.vhd" into library work
+Parsing entity <TopLevel>.
+Parsing architecture <Behavioral> of entity <toplevel>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <TopLevel> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Debouncer> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PicoCPU> (architecture <RTL>) from library <work>.
+
+Elaborating entity <ControlUnit> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <InstMem> (architecture <behavioral>) with generics from library <work>.
+
+Elaborating entity <DPU> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <ALU> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <Adder_Sub> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <FullAdderSub> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/ALU.vhd" Line 74. Case statement is complete. others clause is never selected
+
+Elaborating entity <RegisterFile> (architecture <Behavioral>) with generics from library <work>.
+INFO:HDLCompiler:679 - "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/RegisterFile.vhd" Line 124. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/DPU.vhd" Line 112. Case statement is complete. others clause is never selected
+
+Elaborating entity <Mem> (architecture <beh>) with generics from library <work>.
+
+Elaborating entity <VectorToSevenSeg> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TopLevel>.
+    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/TopLevel.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <TopLevel> synthesized.
+
+Synthesizing Unit <Debouncer>.
+    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/Debouncer.vhd".
+    Found 11-bit register for signal <counter>.
+    Found 3-bit register for signal <ShiftReg>.
+    Found 11-bit adder for signal <counter_in> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  14 D-type flip-flop(s).
+Unit <Debouncer> synthesized.
+
+Synthesizing Unit <PicoCPU>.
+    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/PicoCPU.vhd".
+    Summary:
+	no macro.
+Unit <PicoCPU> synthesized.
+
+Synthesizing Unit <ControlUnit>.
+    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/Controller.vhd".
+        BitWidth = 8
+        InstructionWidth = 14
+    Found 8-bit register for signal <SP_out>.
+    Found 8-bit register for signal <PC_out>.
+    Found 14-bit register for signal <InstrReg_out>.
+    Found 2-bit register for signal <State_out>.
+    Found finite state machine <FSM_0> for signal <State_out>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | fetch                                          |
+    | Power Up State     | fetch                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <PC_out[7]_InstrReg_out[7]_add_205_OUT> created at line 308.
+    Found 8-bit adder for signal <SP_out[7]_GND_8_o_add_209_OUT> created at line 320.
+    Found 8-bit adder for signal <PC_out[7]_GND_8_o_add_210_OUT> created at line 323.
+    Found 8-bit subtractor for signal <GND_8_o_GND_8_o_sub_32_OUT<7:0>> created at line 251.
+    Found 64x6-bit Read Only RAM for signal <Instr>
+    Found 64x11-bit Read Only RAM for signal <GND_8_o_GND_8_o_mux_67_OUT>
+    Summary:
+	inferred   2 RAM(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  30 D-type flip-flop(s).
+	inferred  42 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <ControlUnit> synthesized.
+
+Synthesizing Unit <InstMem>.
+    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/InstMem.vhd".
+        BitWidth = 8
+        InstructionWidth = 14
+    Found 256x14-bit Read Only RAM for signal <data>
+    Summary:
+	inferred   1 RAM(s).
+Unit <InstMem> synthesized.
+
+Synthesizing Unit <DPU>.
+    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/DPU.vhd".
+        BitWidth = 8
+    Found 8-bit register for signal <ACC_out>.
+    Found 1-bit register for signal <OV_Flag_out>.
+    Found 1-bit register for signal <Z_Flag_out>.
+    Found 1-bit register for signal <EQ_Flag_out>.
+    Found 1-bit register for signal <C_flag_out>.
+    Found 8-bit 4-to-1 multiplexer for signal <Mux_Out> created at line 107.
+    Found 8-bit comparator equal for signal <ACC_out[7]_Data_in[7]_equal_6_o> created at line 132
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   7 Multiplexer(s).
+Unit <DPU> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/ALU.vhd".
+        BitWidth = 8
+    Found 8-bit adder for signal <A[7]_GND_13_o_add_4_OUT> created at line 67.
+    Found 16x1-bit Read Only RAM for signal <Add_Sub>
+    Found 8-bit 15-to-1 multiplexer for signal <Result> created at line 56.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <Adder_Sub>.
+    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/Adder.vhd".
+        BitWidth = 8
+    Summary:
+	no macro.
+Unit <Adder_Sub> synthesized.
+
+Synthesizing Unit <FullAdderSub>.
+    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/FullAdder.vhd".
+    Summary:
+Unit <FullAdderSub> synthesized.
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/RegisterFile.vhd".
+        BitWidth = 8
+    Found 8-bit register for signal <R1_out>.
+    Found 8-bit register for signal <R2_out>.
+    Found 8-bit register for signal <R3_out>.
+    Found 8-bit register for signal <R4_out>.
+    Found 8-bit register for signal <R5_out>.
+    Found 8-bit register for signal <R6_out>.
+    Found 8-bit register for signal <R7_out>.
+    Found 8-bit register for signal <R0_out>.
+    Found 8-bit 4-to-1 multiplexer for signal <Data_in> created at line 55.
+    Found 8-bit 8-to-1 multiplexer for signal <Data_out> created at line 115.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <RegisterFile> synthesized.
+
+Synthesizing Unit <Mem>.
+    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/Memory.vhd".
+        BitWidth = 8
+    Found 4-bit register for signal <Mem<2>>.
+    Found 8-bit register for signal <Mem<1>>.
+    Found 8-bit register for signal <Mem<3>>.
+    Found 8-bit register for signal <Mem<4>>.
+    Found 8-bit register for signal <Mem<5>>.
+    Found 8-bit register for signal <Mem<6>>.
+    Found 8-bit register for signal <Mem<7>>.
+    Found 8-bit register for signal <Mem<8>>.
+    Found 8-bit register for signal <Mem<9>>.
+    Found 8-bit register for signal <Mem<10>>.
+    Found 8-bit register for signal <Mem<11>>.
+    Found 8-bit register for signal <Mem<12>>.
+    Found 8-bit register for signal <Mem<13>>.
+    Found 8-bit register for signal <Mem<14>>.
+    Found 8-bit register for signal <Mem<15>>.
+    Found 8-bit register for signal <Mem<16>>.
+    Found 8-bit register for signal <Mem<17>>.
+    Found 8-bit register for signal <Mem<18>>.
+    Found 8-bit register for signal <Mem<19>>.
+    Found 8-bit register for signal <Mem<20>>.
+    Found 8-bit register for signal <Mem<21>>.
+    Found 8-bit register for signal <Mem<22>>.
+    Found 8-bit register for signal <Mem<23>>.
+    Found 8-bit register for signal <Mem<24>>.
+    Found 8-bit register for signal <Mem<25>>.
+    Found 8-bit register for signal <Mem<26>>.
+    Found 8-bit register for signal <Mem<27>>.
+    Found 8-bit register for signal <Mem<28>>.
+    Found 8-bit register for signal <Mem<29>>.
+    Found 8-bit register for signal <Mem<30>>.
+    Found 8-bit register for signal <Mem<31>>.
+    Found 8-bit register for signal <Mem<32>>.
+    Found 8-bit register for signal <Mem<33>>.
+    Found 8-bit register for signal <Mem<34>>.
+    Found 8-bit register for signal <Mem<35>>.
+    Found 8-bit register for signal <Mem<36>>.
+    Found 8-bit register for signal <Mem<37>>.
+    Found 8-bit register for signal <Mem<38>>.
+    Found 8-bit register for signal <Mem<39>>.
+    Found 8-bit register for signal <Mem<40>>.
+    Found 8-bit register for signal <Mem<41>>.
+    Found 8-bit register for signal <Mem<42>>.
+    Found 8-bit register for signal <Mem<43>>.
+    Found 8-bit register for signal <Mem<44>>.
+    Found 8-bit register for signal <Mem<45>>.
+    Found 8-bit register for signal <Mem<46>>.
+    Found 8-bit register for signal <Mem<47>>.
+    Found 8-bit register for signal <Mem<48>>.
+    Found 8-bit register for signal <Mem<49>>.
+    Found 8-bit register for signal <Mem<50>>.
+    Found 8-bit register for signal <Mem<51>>.
+    Found 8-bit register for signal <Mem<52>>.
+    Found 8-bit register for signal <Mem<53>>.
+    Found 8-bit register for signal <Mem<54>>.
+    Found 8-bit register for signal <Mem<55>>.
+    Found 8-bit register for signal <Mem<56>>.
+    Found 8-bit register for signal <Mem<57>>.
+    Found 8-bit register for signal <Mem<58>>.
+    Found 8-bit register for signal <Mem<59>>.
+    Found 8-bit register for signal <Mem<60>>.
+    Found 8-bit register for signal <Mem<61>>.
+    Found 8-bit register for signal <Mem<62>>.
+    Found 8-bit register for signal <Mem<63>>.
+    Found 8-bit register for signal <Mem<64>>.
+    Found 8-bit register for signal <Mem<65>>.
+    Found 8-bit register for signal <Mem<66>>.
+    Found 8-bit register for signal <Mem<67>>.
+    Found 8-bit register for signal <Mem<68>>.
+    Found 8-bit register for signal <Mem<69>>.
+    Found 8-bit register for signal <Mem<70>>.
+    Found 8-bit register for signal <Mem<71>>.
+    Found 8-bit register for signal <Mem<72>>.
+    Found 8-bit register for signal <Mem<73>>.
+    Found 8-bit register for signal <Mem<74>>.
+    Found 8-bit register for signal <Mem<75>>.
+    Found 8-bit register for signal <Mem<76>>.
+    Found 8-bit register for signal <Mem<77>>.
+    Found 8-bit register for signal <Mem<78>>.
+    Found 8-bit register for signal <Mem<79>>.
+    Found 8-bit register for signal <Mem<80>>.
+    Found 8-bit register for signal <Mem<81>>.
+    Found 8-bit register for signal <Mem<82>>.
+    Found 8-bit register for signal <Mem<83>>.
+    Found 8-bit register for signal <Mem<84>>.
+    Found 8-bit register for signal <Mem<85>>.
+    Found 8-bit register for signal <Mem<86>>.
+    Found 8-bit register for signal <Mem<87>>.
+    Found 8-bit register for signal <Mem<88>>.
+    Found 8-bit register for signal <Mem<89>>.
+    Found 8-bit register for signal <Mem<90>>.
+    Found 8-bit register for signal <Mem<91>>.
+    Found 8-bit register for signal <Mem<92>>.
+    Found 8-bit register for signal <Mem<93>>.
+    Found 8-bit register for signal <Mem<94>>.
+    Found 8-bit register for signal <Mem<95>>.
+    Found 8-bit register for signal <Mem<96>>.
+    Found 8-bit register for signal <Mem<97>>.
+    Found 8-bit register for signal <Mem<98>>.
+    Found 8-bit register for signal <Mem<99>>.
+    Found 8-bit register for signal <Mem<100>>.
+    Found 8-bit register for signal <Mem<101>>.
+    Found 8-bit register for signal <Mem<102>>.
+    Found 8-bit register for signal <Mem<103>>.
+    Found 8-bit register for signal <Mem<104>>.
+    Found 8-bit register for signal <Mem<105>>.
+    Found 8-bit register for signal <Mem<106>>.
+    Found 8-bit register for signal <Mem<107>>.
+    Found 8-bit register for signal <Mem<108>>.
+    Found 8-bit register for signal <Mem<109>>.
+    Found 8-bit register for signal <Mem<110>>.
+    Found 8-bit register for signal <Mem<111>>.
+    Found 8-bit register for signal <Mem<112>>.
+    Found 8-bit register for signal <Mem<113>>.
+    Found 8-bit register for signal <Mem<114>>.
+    Found 8-bit register for signal <Mem<115>>.
+    Found 8-bit register for signal <Mem<116>>.
+    Found 8-bit register for signal <Mem<117>>.
+    Found 8-bit register for signal <Mem<118>>.
+    Found 8-bit register for signal <Mem<119>>.
+    Found 8-bit register for signal <Mem<120>>.
+    Found 8-bit register for signal <Mem<121>>.
+    Found 8-bit register for signal <Mem<122>>.
+    Found 8-bit register for signal <Mem<123>>.
+    Found 8-bit register for signal <Mem<124>>.
+    Found 8-bit register for signal <Mem<125>>.
+    Found 8-bit register for signal <Mem<126>>.
+    Found 8-bit register for signal <Mem<127>>.
+    Found 8-bit register for signal <Mem<128>>.
+    Found 8-bit register for signal <Mem<129>>.
+    Found 8-bit register for signal <Mem<130>>.
+    Found 8-bit register for signal <Mem<131>>.
+    Found 8-bit register for signal <Mem<132>>.
+    Found 8-bit register for signal <Mem<133>>.
+    Found 8-bit register for signal <Mem<134>>.
+    Found 8-bit register for signal <Mem<135>>.
+    Found 8-bit register for signal <Mem<136>>.
+    Found 8-bit register for signal <Mem<137>>.
+    Found 8-bit register for signal <Mem<138>>.
+    Found 8-bit register for signal <Mem<139>>.
+    Found 8-bit register for signal <Mem<140>>.
+    Found 8-bit register for signal <Mem<141>>.
+    Found 8-bit register for signal <Mem<142>>.
+    Found 8-bit register for signal <Mem<143>>.
+    Found 8-bit register for signal <Mem<144>>.
+    Found 8-bit register for signal <Mem<145>>.
+    Found 8-bit register for signal <Mem<146>>.
+    Found 8-bit register for signal <Mem<147>>.
+    Found 8-bit register for signal <Mem<148>>.
+    Found 8-bit register for signal <Mem<149>>.
+    Found 8-bit register for signal <Mem<150>>.
+    Found 8-bit register for signal <Mem<151>>.
+    Found 8-bit register for signal <Mem<152>>.
+    Found 8-bit register for signal <Mem<153>>.
+    Found 8-bit register for signal <Mem<154>>.
+    Found 8-bit register for signal <Mem<155>>.
+    Found 8-bit register for signal <Mem<156>>.
+    Found 8-bit register for signal <Mem<157>>.
+    Found 8-bit register for signal <Mem<158>>.
+    Found 8-bit register for signal <Mem<159>>.
+    Found 8-bit register for signal <Mem<160>>.
+    Found 8-bit register for signal <Mem<161>>.
+    Found 8-bit register for signal <Mem<162>>.
+    Found 8-bit register for signal <Mem<163>>.
+    Found 8-bit register for signal <Mem<164>>.
+    Found 8-bit register for signal <Mem<165>>.
+    Found 8-bit register for signal <Mem<166>>.
+    Found 8-bit register for signal <Mem<167>>.
+    Found 8-bit register for signal <Mem<168>>.
+    Found 8-bit register for signal <Mem<169>>.
+    Found 8-bit register for signal <Mem<170>>.
+    Found 8-bit register for signal <Mem<171>>.
+    Found 8-bit register for signal <Mem<172>>.
+    Found 8-bit register for signal <Mem<173>>.
+    Found 8-bit register for signal <Mem<174>>.
+    Found 8-bit register for signal <Mem<175>>.
+    Found 8-bit register for signal <Mem<176>>.
+    Found 8-bit register for signal <Mem<177>>.
+    Found 8-bit register for signal <Mem<178>>.
+    Found 8-bit register for signal <Mem<179>>.
+    Found 8-bit register for signal <Mem<180>>.
+    Found 8-bit register for signal <Mem<181>>.
+    Found 8-bit register for signal <Mem<182>>.
+    Found 8-bit register for signal <Mem<183>>.
+    Found 8-bit register for signal <Mem<184>>.
+    Found 8-bit register for signal <Mem<185>>.
+    Found 8-bit register for signal <Mem<186>>.
+    Found 8-bit register for signal <Mem<187>>.
+    Found 8-bit register for signal <Mem<188>>.
+    Found 8-bit register for signal <Mem<189>>.
+    Found 8-bit register for signal <Mem<190>>.
+    Found 8-bit register for signal <Mem<191>>.
+    Found 8-bit register for signal <Mem<192>>.
+    Found 8-bit register for signal <Mem<193>>.
+    Found 8-bit register for signal <Mem<194>>.
+    Found 8-bit register for signal <Mem<195>>.
+    Found 8-bit register for signal <Mem<196>>.
+    Found 8-bit register for signal <Mem<197>>.
+    Found 8-bit register for signal <Mem<198>>.
+    Found 8-bit register for signal <Mem<199>>.
+    Found 8-bit register for signal <Mem<200>>.
+    Found 8-bit register for signal <Mem<201>>.
+    Found 8-bit register for signal <Mem<202>>.
+    Found 8-bit register for signal <Mem<203>>.
+    Found 8-bit register for signal <Mem<204>>.
+    Found 8-bit register for signal <Mem<205>>.
+    Found 8-bit register for signal <Mem<206>>.
+    Found 8-bit register for signal <Mem<207>>.
+    Found 8-bit register for signal <Mem<208>>.
+    Found 8-bit register for signal <Mem<209>>.
+    Found 8-bit register for signal <Mem<210>>.
+    Found 8-bit register for signal <Mem<211>>.
+    Found 8-bit register for signal <Mem<212>>.
+    Found 8-bit register for signal <Mem<213>>.
+    Found 8-bit register for signal <Mem<214>>.
+    Found 8-bit register for signal <Mem<215>>.
+    Found 8-bit register for signal <Mem<216>>.
+    Found 8-bit register for signal <Mem<217>>.
+    Found 8-bit register for signal <Mem<218>>.
+    Found 8-bit register for signal <Mem<219>>.
+    Found 8-bit register for signal <Mem<220>>.
+    Found 8-bit register for signal <Mem<221>>.
+    Found 8-bit register for signal <Mem<222>>.
+    Found 8-bit register for signal <Mem<223>>.
+    Found 8-bit register for signal <Mem<224>>.
+    Found 8-bit register for signal <Mem<225>>.
+    Found 8-bit register for signal <Mem<226>>.
+    Found 8-bit register for signal <Mem<227>>.
+    Found 8-bit register for signal <Mem<228>>.
+    Found 8-bit register for signal <Mem<229>>.
+    Found 8-bit register for signal <Mem<230>>.
+    Found 8-bit register for signal <Mem<231>>.
+    Found 8-bit register for signal <Mem<232>>.
+    Found 8-bit register for signal <Mem<233>>.
+    Found 8-bit register for signal <Mem<234>>.
+    Found 8-bit register for signal <Mem<235>>.
+    Found 8-bit register for signal <Mem<236>>.
+    Found 8-bit register for signal <Mem<237>>.
+    Found 8-bit register for signal <Mem<238>>.
+    Found 8-bit register for signal <Mem<239>>.
+    Found 8-bit register for signal <Mem<240>>.
+    Found 8-bit register for signal <Mem<241>>.
+    Found 8-bit register for signal <Mem<242>>.
+    Found 8-bit register for signal <Mem<243>>.
+    Found 8-bit register for signal <Mem<244>>.
+    Found 8-bit register for signal <Mem<245>>.
+    Found 8-bit register for signal <Mem<246>>.
+    Found 8-bit register for signal <Mem<247>>.
+    Found 8-bit register for signal <Mem<248>>.
+    Found 8-bit register for signal <Mem<249>>.
+    Found 8-bit register for signal <Mem<250>>.
+    Found 8-bit register for signal <Mem<251>>.
+    Found 8-bit register for signal <Mem<252>>.
+    Found 8-bit register for signal <Mem<253>>.
+    Found 8-bit register for signal <Mem<254>>.
+    Found 8-bit register for signal <Mem<255>>.
+    Found 8-bit register for signal <Mem<0>>.
+    Found 8-bit 256-to-1 multiplexer for signal <Data_Out> created at line 39.
+    WARNING:Xst:2404 -  FFs/Latches <Mem<2><7:4>> (without init value) have a constant value of 0 in block <Mem>.
+    Summary:
+	inferred 2044 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Mem> synthesized.
+
+Synthesizing Unit <VectorToSevenSeg>.
+    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/VectorToSevenSeg.vhd".
+    Found 20-bit register for signal <counter>.
+    Found 20-bit adder for signal <counter[19]_GND_19_o_add_0_OUT> created at line 24.
+    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_3_OUT> created at line 38.
+    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_6_OUT> created at line 41.
+    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_8_OUT> created at line 38.
+    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_10_OUT> created at line 41.
+    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_12_OUT> created at line 38.
+    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_14_OUT> created at line 41.
+    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_16_OUT> created at line 38.
+    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_18_OUT> created at line 41.
+    Found 16x7-bit Read Only RAM for signal <SevenSeg>
+    Found 4x4-bit Read Only RAM for signal <AN>
+    Found 1-bit 4-to-1 multiplexer for signal <SvSegIn<3>> created at line 71.
+    Found 1-bit 4-to-1 multiplexer for signal <SvSegIn<2>> created at line 71.
+    Found 1-bit 4-to-1 multiplexer for signal <SvSegIn<0>> created at line 71.
+    Found 1-bit 4-to-1 multiplexer for signal <SvSegIn<1>> created at line 71.
+    Found 3-bit comparator greater for signal <PWR_21_o_InputVector[6]_LessThan_3_o> created at line 37
+    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_6_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_8_o> created at line 37
+    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_10_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_12_o> created at line 37
+    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_14_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_16_o> created at line 37
+    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_18_o> created at line 40
+    Summary:
+	inferred   2 RAM(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred  33 Multiplexer(s).
+Unit <VectorToSevenSeg> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 6
+ 16x1-bit single-port Read Only RAM                    : 1
+ 16x7-bit single-port Read Only RAM                    : 1
+ 256x14-bit single-port Read Only RAM                  : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+ 64x11-bit single-port Read Only RAM                   : 1
+ 64x6-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 15
+ 11-bit adder                                          : 1
+ 20-bit adder                                          : 1
+ 4-bit adder                                           : 8
+ 8-bit adder                                           : 3
+ 8-bit addsub                                          : 1
+ 8-bit subtractor                                      : 1
+# Registers                                            : 275
+ 1-bit register                                        : 4
+ 11-bit register                                       : 1
+ 14-bit register                                       : 1
+ 20-bit register                                       : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 266
+# Comparators                                          : 9
+ 3-bit comparator greater                              : 1
+ 4-bit comparator greater                              : 7
+ 8-bit comparator equal                                : 1
+# Multiplexers                                         : 87
+ 1-bit 2-to-1 multiplexer                              : 45
+ 1-bit 4-to-1 multiplexer                              : 4
+ 11-bit 2-to-1 multiplexer                             : 1
+ 12-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 8-bit 15-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 29
+ 8-bit 256-to-1 multiplexer                            : 1
+ 8-bit 4-to-1 multiplexer                              : 2
+ 8-bit 8-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+# Xors                                                 : 25
+ 1-bit xor2                                            : 24
+ 8-bit xor2                                            : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <Mem_1_0> in Unit <Mem_comp> is equivalent to the following 3 FFs/Latches, which will be removed : <Mem_1_1> <Mem_1_2> <Mem_1_3> 
+WARNING:Xst:1710 - FF/Latch <Mem_1_0> (without init value) has a constant value of 0 in block <Mem_comp>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <ALU>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Add_Sub> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 1-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Command>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Add_Sub>       |          |
+    -----------------------------------------------------------------------
+Unit <ALU> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ControlUnit>.
+The following registers are absorbed into counter <SP_out>: 1 register on signal <SP_out>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Instr> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 6-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <InstrReg_out<13:8>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Instr>         |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_GND_8_o_GND_8_o_mux_67_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 11-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Instr>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ControlUnit> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Debouncer>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <Debouncer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <InstMem>.
+INFO:Xst:3217 - HDL ADVISOR - Register <InstrReg_out> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_data> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 14-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <address>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_data> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+Unit <InstMem> synthesized (advanced).
+
+Synthesizing (advanced) Unit <VectorToSevenSeg>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_AN> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <counter>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <AN>            |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_SevenSeg> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <SvSegIn>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <SevenSeg>      |          |
+    -----------------------------------------------------------------------
+Unit <VectorToSevenSeg> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 6
+ 16x1-bit single-port distributed Read Only RAM        : 1
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 256x14-bit single-port distributed Read Only RAM      : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+ 64x11-bit single-port distributed Read Only RAM       : 1
+ 64x6-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 12
+ 4-bit adder                                           : 8
+ 8-bit adder                                           : 3
+ 8-bit subtractor                                      : 1
+# Counters                                             : 3
+ 11-bit up counter                                     : 1
+ 20-bit up counter                                     : 1
+ 8-bit updown counter                                  : 1
+# Registers                                            : 2145
+ Flip-Flops                                            : 2145
+# Comparators                                          : 9
+ 3-bit comparator greater                              : 1
+ 4-bit comparator greater                              : 7
+ 8-bit comparator equal                                : 1
+# Multiplexers                                         : 86
+ 1-bit 2-to-1 multiplexer                              : 44
+ 1-bit 4-to-1 multiplexer                              : 4
+ 11-bit 2-to-1 multiplexer                             : 1
+ 12-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 8-bit 15-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 29
+ 8-bit 256-to-1 multiplexer                            : 1
+ 8-bit 4-to-1 multiplexer                              : 2
+ 8-bit 8-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+# Xors                                                 : 25
+ 1-bit xor2                                            : 24
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <Mem_1_0> (without init value) has a constant value of 0 in block <Mem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mem_1_1> (without init value) has a constant value of 0 in block <Mem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mem_1_2> (without init value) has a constant value of 0 in block <Mem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mem_1_3> (without init value) has a constant value of 0 in block <Mem>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <PicoCPU_comp/ControlUnit_comp/FSM_0> on signal <State_out[1:2]> with gray encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ fetch     | 00
+ decode    | 01
+ execution | 11
+ writeback | 10
+-----------------------
+
+Optimizing unit <TopLevel> ...
+
+Optimizing unit <Mem> ...
+
+Optimizing unit <ControlUnit> ...
+
+Optimizing unit <DPU> ...
+
+Optimizing unit <RegisterFile> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <Adder_Sub> ...
+
+Optimizing unit <VectorToSevenSeg> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TopLevel, actual ratio is 43.
+FlipFlop PicoCPU_comp/ControlUnit_comp/State_out_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop PicoCPU_comp/ControlUnit_comp/State_out_FSM_FFd2 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 2185
+ Flip-Flops                                            : 2185
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TopLevel.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1784
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 29
+#      LUT2                        : 20
+#      LUT3                        : 51
+#      LUT4                        : 41
+#      LUT5                        : 303
+#      LUT6                        : 806
+#      MUXCY                       : 43
+#      MUXF7                       : 303
+#      MUXF8                       : 136
+#      VCC                         : 1
+#      XORCY                       : 47
+# FlipFlops/Latches                : 2185
+#      FD                          : 23
+#      FDC                         : 48
+#      FDCE                        : 2114
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 27
+#      IBUF                        : 12
+#      OBUF                        : 15
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            2185  out of  18224    11%  
+ Number of Slice LUTs:                 1253  out of   9112    13%  
+    Number used as Logic:              1253  out of   9112    13%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3360
+   Number with an unused Flip Flop:    1175  out of   3360    34%  
+   Number with an unused LUT:          2107  out of   3360    62%  
+   Number of fully used LUT-FF pairs:    78  out of   3360     2%  
+   Number of unique control sets:       270
+
+IO Utilization: 
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of    232    11%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                 | Load  |
+-----------------------------------+---------------------------------------+-------+
+Debouncer_comp/counter_10          | NONE(Debouncer_comp/ShiftReg_2)       | 3     |
+clk                                | IBUF+BUFG                             | 31    |
+SystemClk(Mmux_SystemClk11:O)      | BUFG(*)(PicoCPU_comp/Mem_comp/Mem_1_7)| 2151  |
+-----------------------------------+---------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 15.033ns (Maximum Frequency: 66.522MHz)
+   Minimum input arrival time before clock: 4.137ns
+   Maximum output required time after clock: 10.263ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Debouncer_comp/counter_10'
+  Clock period: 1.165ns (frequency: 858.185MHz)
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               1.165ns (Levels of Logic = 0)
+  Source:            Debouncer_comp/ShiftReg_1 (FF)
+  Destination:       Debouncer_comp/ShiftReg_2 (FF)
+  Source Clock:      Debouncer_comp/counter_10 rising
+  Destination Clock: Debouncer_comp/counter_10 rising
+
+  Data Path: Debouncer_comp/ShiftReg_1 to Debouncer_comp/ShiftReg_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  Debouncer_comp/ShiftReg_1 (Debouncer_comp/ShiftReg_1)
+     FD:D                      0.102          Debouncer_comp/ShiftReg_2
+    ----------------------------------------
+    Total                      1.165ns (0.549ns logic, 0.616ns route)
+                                       (47.1% logic, 52.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.028ns (frequency: 493.133MHz)
+  Total number of paths / destination ports: 276 / 31
+-------------------------------------------------------------------------
+Delay:               2.028ns (Levels of Logic = 21)
+  Source:            SevSeg_comp/counter_0 (FF)
+  Destination:       SevSeg_comp/counter_19 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: SevSeg_comp/counter_0 to SevSeg_comp/counter_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  SevSeg_comp/counter_0 (SevSeg_comp/counter_0)
+     INV:I->O              1   0.206   0.000  SevSeg_comp/Mcount_counter_lut<0>_INV_0 (SevSeg_comp/Mcount_counter_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  SevSeg_comp/Mcount_counter_cy<0> (SevSeg_comp/Mcount_counter_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<1> (SevSeg_comp/Mcount_counter_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<2> (SevSeg_comp/Mcount_counter_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<3> (SevSeg_comp/Mcount_counter_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<4> (SevSeg_comp/Mcount_counter_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<5> (SevSeg_comp/Mcount_counter_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<6> (SevSeg_comp/Mcount_counter_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<7> (SevSeg_comp/Mcount_counter_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<8> (SevSeg_comp/Mcount_counter_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<9> (SevSeg_comp/Mcount_counter_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<10> (SevSeg_comp/Mcount_counter_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<11> (SevSeg_comp/Mcount_counter_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<12> (SevSeg_comp/Mcount_counter_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<13> (SevSeg_comp/Mcount_counter_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<14> (SevSeg_comp/Mcount_counter_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<15> (SevSeg_comp/Mcount_counter_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<16> (SevSeg_comp/Mcount_counter_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<17> (SevSeg_comp/Mcount_counter_cy<17>)
+     MUXCY:CI->O           0   0.019   0.000  SevSeg_comp/Mcount_counter_cy<18> (SevSeg_comp/Mcount_counter_cy<18>)
+     XORCY:CI->O           1   0.180   0.000  SevSeg_comp/Mcount_counter_xor<19> (SevSeg_comp/Result<19>)
+     FD:D                      0.102          SevSeg_comp/counter_19
+    ----------------------------------------
+    Total                      2.028ns (1.449ns logic, 0.579ns route)
+                                       (71.5% logic, 28.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SystemClk'
+  Clock period: 15.033ns (frequency: 66.522MHz)
+  Total number of paths / destination ports: 9846397 / 4257
+-------------------------------------------------------------------------
+Delay:               15.033ns (Levels of Logic = 17)
+  Source:            PicoCPU_comp/ControlUnit_comp/InstrReg_out_12 (FF)
+  Destination:       PicoCPU_comp/DPU_comp/Z_Flag_out (FF)
+  Source Clock:      SystemClk rising
+  Destination Clock: SystemClk rising
+
+  Data Path: PicoCPU_comp/ControlUnit_comp/InstrReg_out_12 to PicoCPU_comp/DPU_comp/Z_Flag_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   1.109  PicoCPU_comp/ControlUnit_comp/InstrReg_out_12 (PicoCPU_comp/ControlUnit_comp/InstrReg_out_12)
+     LUT6:I0->O           27   0.203   1.585  PicoCPU_comp/ControlUnit_comp_Mram_Instr41 (PicoCPU_comp/ControlUnit_comp/Instr<4>)
+     LUT6:I0->O           28   0.203   1.235  PicoCPU_comp/ControlUnit_comp/_n0674<5>1 (PicoCPU_comp/ControlUnit_comp/_n0674)
+     LUT4:I3->O           17   0.205   1.028  PicoCPU_comp/ControlUnit_comp/Mmux_MemRdAddress2_SW0 (N19)
+     LUT6:I5->O          243   0.205   2.065  PicoCPU_comp/ControlUnit_comp/Mmux_MemRdAddress2 (PicoCPU_comp/Mem_Rd_Address<1>)
+     LUT6:I5->O            1   0.205   0.000  PicoCPU_comp/Mem_comp/Mmux_Data_Out_1363 (PicoCPU_comp/Mem_comp/Mmux_Data_Out_1363)
+     MUXF7:I1->O           1   0.140   0.000  PicoCPU_comp/Mem_comp/Mmux_Data_Out_12_f7_29 (PicoCPU_comp/Mem_comp/Mmux_Data_Out_12_f730)
+     MUXF8:I0->O           1   0.144   0.808  PicoCPU_comp/Mem_comp/Mmux_Data_Out_10_f8_17 (PicoCPU_comp/Mem_comp/Mmux_Data_Out_10_f818)
+     LUT6:I3->O            1   0.205   0.000  PicoCPU_comp/Mem_comp/Mmux_Data_Out_43 (PicoCPU_comp/Mem_comp/Mmux_Data_Out_43)
+     MUXF7:I1->O           1   0.140   0.000  PicoCPU_comp/Mem_comp/Mmux_Data_Out_3_f7_2 (PicoCPU_comp/Mem_comp/Mmux_Data_Out_3_f73)
+     MUXF8:I1->O           3   0.152   0.651  PicoCPU_comp/Mem_comp/Mmux_Data_Out_2_f8_2 (PicoCPU_comp/MEMDATA<3>)
+     LUT6:I5->O            7   0.205   0.774  PicoCPU_comp/DPU_comp/ALU_comp/Adder_comp/g_counter[3].ADDN/Mxor_NewB_xo<0>1 (PicoCPU_comp/DPU_comp/ALU_comp/Adder_comp/g_counter[3].ADDN/NewB)
+     LUT6:I5->O            1   0.205   0.000  PicoCPU_comp/DPU_comp/ALU_comp/Adder_comp/g_counter[3].ADDN/C_out1_SW0_G (N119)
+     MUXF7:I1->O           2   0.140   0.721  PicoCPU_comp/DPU_comp/ALU_comp/Adder_comp/g_counter[3].ADDN/C_out1_SW0 (N80)
+     LUT5:I3->O            4   0.203   0.684  PicoCPU_comp/DPU_comp/ALU_comp/Adder_comp/g_counter[5].ADDN/C_out1 (PicoCPU_comp/DPU_comp/ALU_comp/Adder_comp/carry<6>)
+     LUT6:I5->O            2   0.205   0.721  PicoCPU_comp/DPU_comp/ALU_comp/Command<3>_6 (PicoCPU_comp/DPU_comp/ALU_comp/Command<3>_6)
+     LUT6:I4->O            1   0.203   0.000  PicoCPU_comp/DPU_comp/Mmux_Z_Flag_in1_G (N159)
+     MUXF7:I1->O           1   0.140   0.000  PicoCPU_comp/DPU_comp/Mmux_Z_Flag_in1 (PicoCPU_comp/DPU_comp/Z_Flag_in)
+     FDCE:D                    0.102          PicoCPU_comp/DPU_comp/Z_Flag_out
+    ----------------------------------------
+    Total                     15.033ns (3.652ns logic, 11.381ns route)
+                                       (24.3% logic, 75.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Debouncer_comp/counter_10'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.903ns (Levels of Logic = 1)
+  Source:            ClkBttn (PAD)
+  Destination:       Debouncer_comp/ShiftReg_0 (FF)
+  Destination Clock: Debouncer_comp/counter_10 rising
+
+  Data Path: ClkBttn to Debouncer_comp/ShiftReg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  ClkBttn_IBUF (ClkBttn_IBUF)
+     FD:D                      0.102          Debouncer_comp/ShiftReg_0
+    ----------------------------------------
+    Total                      1.903ns (1.324ns logic, 0.579ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              4.137ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       Debouncer_comp/counter_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to Debouncer_comp/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          2162   1.222   2.485  rst_IBUF (rst_IBUF)
+     FDC:CLR                   0.430          Debouncer_comp/counter_0
+    ----------------------------------------
+    Total                      4.137ns (1.652ns logic, 2.485ns route)
+                                       (39.9% logic, 60.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SystemClk'
+  Total number of paths / destination ports: 2159 / 2159
+-------------------------------------------------------------------------
+Offset:              4.137ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       PicoCPU_comp/Mem_comp/Mem_1_7 (FF)
+  Destination Clock: SystemClk rising
+
+  Data Path: rst to PicoCPU_comp/Mem_comp/Mem_1_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          2162   1.222   2.485  rst_IBUF (rst_IBUF)
+     FDCE:CLR                  0.430          PicoCPU_comp/Mem_comp/Mem_5_0
+    ----------------------------------------
+    Total                      4.137ns (1.652ns logic, 2.485ns route)
+                                       (39.9% logic, 60.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 106 / 11
+-------------------------------------------------------------------------
+Offset:              7.826ns (Levels of Logic = 5)
+  Source:            SevSeg_comp/counter_18 (FF)
+  Destination:       SevenSeg<4> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: SevSeg_comp/counter_18 to SevenSeg<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              11   0.447   0.883  SevSeg_comp/counter_18 (SevSeg_comp/counter_18)
+     LUT6:I5->O            1   0.205   0.684  SevSeg_comp/Mmux_SvSegIn<0>163 (SevSeg_comp/Mmux_SvSegIn<0>162)
+     LUT6:I4->O            1   0.203   0.827  SevSeg_comp/Mmux_SvSegIn<0>164 (SevSeg_comp/Mmux_SvSegIn<0>163)
+     LUT4:I0->O            7   0.203   1.021  SevSeg_comp/Mmux_SvSegIn<0>165 (SevSeg_comp/SvSegIn<3>)
+     LUT4:I0->O            1   0.203   0.579  SevSeg_comp/Mram_SevenSeg41 (SevenSeg_4_OBUF)
+     OBUF:I->O                 2.571          SevenSeg_4_OBUF (SevenSeg<4>)
+    ----------------------------------------
+    Total                      7.826ns (3.832ns logic, 3.993ns route)
+                                       (49.0% logic, 51.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SystemClk'
+  Total number of paths / destination ports: 676 / 11
+-------------------------------------------------------------------------
+Offset:              10.263ns (Levels of Logic = 6)
+  Source:            PicoCPU_comp/DPU_comp/ACC_out_2 (FF)
+  Destination:       SevenSeg<4> (PAD)
+  Source Clock:      SystemClk rising
+
+  Data Path: PicoCPU_comp/DPU_comp/ACC_out_2 to SevenSeg<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            302   0.447   2.436  PicoCPU_comp/DPU_comp/ACC_out_2 (PicoCPU_comp/DPU_comp/ACC_out_2)
+     LUT6:I0->O            1   0.203   0.684  SevSeg_comp/Mmux_SvSegIn<0>162 (SevSeg_comp/Mmux_SvSegIn<0>161)
+     LUT6:I4->O            1   0.203   0.684  SevSeg_comp/Mmux_SvSegIn<0>163 (SevSeg_comp/Mmux_SvSegIn<0>162)
+     LUT6:I4->O            1   0.203   0.827  SevSeg_comp/Mmux_SvSegIn<0>164 (SevSeg_comp/Mmux_SvSegIn<0>163)
+     LUT4:I0->O            7   0.203   1.021  SevSeg_comp/Mmux_SvSegIn<0>165 (SevSeg_comp/SvSegIn<3>)
+     LUT4:I0->O            1   0.203   0.579  SevSeg_comp/Mram_SevenSeg41 (SevenSeg_4_OBUF)
+     OBUF:I->O                 2.571          SevenSeg_4_OBUF (SevenSeg<4>)
+    ----------------------------------------
+    Total                     10.263ns (4.033ns logic, 6.230ns route)
+                                       (39.3% logic, 60.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Debouncer_comp/counter_10
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+Debouncer_comp/counter_10|    1.165|         |         |         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SystemClk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SystemClk      |   15.033|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.028|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.47 secs
+ 
+--> 
+
+
+Total memory usage is 414360 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+
