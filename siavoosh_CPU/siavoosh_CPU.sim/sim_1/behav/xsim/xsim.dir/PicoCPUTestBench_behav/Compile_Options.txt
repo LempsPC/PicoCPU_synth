@@ -1,0 +1,1 @@
+-wto "9b6acebed0e24fcea449f69179eda2a2" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "PicoCPUTestBench_behav" "xil_defaultlib.PicoCPUTestBench" -log "elaborate.log" 
