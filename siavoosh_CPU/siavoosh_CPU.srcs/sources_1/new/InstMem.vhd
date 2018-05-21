@@ -28,7 +28,7 @@ architecture behavioral of InstMem is
 10 =>  "00001000000010",--load from memory cell 2 into accumulator
 11 =>  "00010100010000", -- lahutame akumulaatori vasakpoolse switchi väärtusega, and
 12 =>  "01010000011100", --jump to address if 0
-
+13 =>  "01001100000000", --jump back to beginning
 --switchide väärtused viskan akumulaatorisse
 16 =>  "10001100000001", -- Acc <-- Reg0
 17 =>  "00010000000001", --subtract from ACC value that switches are making, result into Acc
