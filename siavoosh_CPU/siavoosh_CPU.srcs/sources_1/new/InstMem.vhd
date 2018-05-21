@@ -18,16 +18,38 @@ architecture behavioral of InstMem is
 0 =>   "01110000000000",--clear ACC
 1 =>   "00001000000010",--load from memory cell 2 into accumulator
 2 =>   "00010110000000", -- lahutame akumulaatori vasakpoolse switchi väärtusega, lahutamine
-3 =>   "010100aadresskuhu", --jump to address if 0
+3 =>   "01010000010000", --jump to address if 0 aadressiks 16
 4 =>   "00001000000010",--load from memory cell 2 into accumulator
 5 =>   "00010101000000", -- lahutame akumulaatori vasakpoolse switchi väärtusega, liitmine
-6 =>   "010100aadresskuhu", --jump to address if 0
+6 =>   "01010000010100", --jump to address if 0
 7 =>   "00001000000010",--load from memory cell 2 into accumulator
 8 =>   "00010100100000", -- lahutame akumulaatori vasakpoolse switchi väärtusega, or
-9 =>   "010100aadresskuhu", --jump to address if 0
+9 =>   "01010000011000", --jump to address if 0
 10 =>  "00001000000010",--load from memory cell 2 into accumulator
 11 =>  "00010100010000", -- lahutame akumulaatori vasakpoolse switchi väärtusega, and
-12 =>  "010100aadresskuhu", --jump to address if 0
+12 =>  "01010000011100", --jump to address if 0
+
+--switchide väärtused viskan akumulaatorisse
+16 =>  "10001100000001", -- Acc <-- Reg0
+17 =>  "00010000000001", --subtract from ACC value that switches are making, result into Acc
+18 =>  "10000000000001", -- Reg0 <-- Acc
+19 =>  "01001100000000", --jump back to beginning
+
+20 =>  "10001100000001", -- Acc <-- Reg0
+21 =>  "00000100000001", --add from ACC value that switches are making, result into Acc
+22 =>  "10000000000001", -- Reg0 <-- Acc
+23 =>  "01001100000000", --jump back to beginning
+
+
+24 =>  "10001100000001", -- Acc <-- Reg0
+25 =>  "00111000000001", --logical AND from ACC value that switches are making, result into Acc
+26 =>  "10000000000001", -- Reg0 <-- Acc
+27 =>  "01001100000000", --jump back to beginning
+
+28 =>  "10001100000001", -- Acc <-- Reg0
+29 =>  "00111000000001", --logical AND from ACC value that switches are making, result into Acc
+30 =>  "10000000000001", -- Reg0 <-- Acc
+31 =>  "01001100000000", --jump back to beginning
 
 others => "00000000000000"
     );

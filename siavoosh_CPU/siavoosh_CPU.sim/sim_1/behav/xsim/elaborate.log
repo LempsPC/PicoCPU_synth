@@ -4,4 +4,25 @@ Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 9b6acebed0
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture rtl of entity xil_defaultlib.ControlUnit [\ControlUnit(bitwidth=8,instruct...]
+Compiling architecture behavioral of entity xil_defaultlib.InstMem [\InstMem(bitwidth=8,instructionw...]
+Compiling architecture behavioral of entity xil_defaultlib.FullAdderSub [fulladdersub_default]
+Compiling architecture rtl of entity xil_defaultlib.Adder_Sub [\Adder_Sub(bitwidth=8)\]
+Compiling architecture rtl of entity xil_defaultlib.ALU [\ALU(bitwidth=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [\RegisterFile(bitwidth=8)\]
+Compiling architecture rtl of entity xil_defaultlib.DPU [\DPU(bitwidth=8)\]
+Compiling architecture beh of entity xil_defaultlib.Mem [\Mem(bitwidth=8)\]
+Compiling architecture rtl of entity xil_defaultlib.PicoCPU [picocpu_default]
+Compiling architecture bench of entity xil_defaultlib.picocputestbench
+Built simulation snapshot PicoCPUTestBench_behav
