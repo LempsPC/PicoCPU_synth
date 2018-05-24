@@ -1,0 +1,52 @@
+Running: /cad/x_14/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -lib "secureip" -o "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPUTestBench_isim_beh.exe" -prj "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPUTestBench_beh.prj" "work.PicoCPUTestBench" 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/FullAdder.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/Adder.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/RegisterFile.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/ALU.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/Memory.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/InstMem.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/DPU.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/Controller.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/VectorToSevenSeg.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/PicoCPU.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/Debouncer.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/Debouncer2.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/TopLevel.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/PicoTestBench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 99508 KB
+Fuse CPU Usage: 940 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling architecture behavioral of entity Debouncer [debouncer_default]
+Compiling architecture behavioral of entity debouncer2 [\debouncer2(19)\]
+Compiling package attributes
+Compiling package std_logic_misc
+Compiling architecture rtl of entity ControlUnit [\ControlUnit(8,14)\]
+Compiling architecture behavioral of entity InstMem [\InstMem(8,14)\]
+Compiling package math_real
+Compiling architecture behavioral of entity FullAdderSub [fulladdersub_default]
+Compiling architecture rtl of entity Adder_Sub [\Adder_Sub(8)\]
+Compiling architecture rtl of entity ALU [\ALU(8)\]
+Compiling architecture behavioral of entity RegisterFile [\RegisterFile(8)\]
+Compiling architecture rtl of entity DPU [\DPU(8)\]
+Compiling architecture beh of entity Mem [\Mem(8)\]
+Compiling architecture rtl of entity PicoCPU [picocpu_default]
+Compiling architecture behavioral of entity VectorToSevenSeg [vectortosevenseg_default]
+Compiling architecture behavioral of entity TopLevel [toplevel_default]
+Compiling architecture bench of entity picocputestbench
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 35 VHDL Units
+Built simulation executable /home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPUTestBench_isim_beh.exe
+Fuse Memory Usage: 681900 KB
+Fuse CPU Usage: 1060 ms
+GCC CPU Usage: 110 ms

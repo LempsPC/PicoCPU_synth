@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPUTestBench_isim_beh1.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="attributes" />
+            <top_module name="math_real" />
+            <top_module name="numeric_std" />
+            <top_module name="picocputestbench" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_misc" />
+            <top_module name="std_logic_unsigned" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/picocputestbench/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/picocputestbench/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/picocputestbench/clock_button" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock_button</obj_property>
+      <obj_property name="ObjectShortName">clock_button</obj_property>
+   </wvobject>
+   <wvobject fp_name="/picocputestbench/clock_source" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock_source</obj_property>
+      <obj_property name="ObjectShortName">clock_source</obj_property>
+   </wvobject>
+   <wvobject fp_name="/picocputestbench/clk_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_out</obj_property>
+      <obj_property name="ObjectShortName">clk_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/picocputestbench/an" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">an[3:0]</obj_property>
+      <obj_property name="ObjectShortName">an[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/picocputestbench/flag_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">flag_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">flag_out[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/picocputestbench/sevenseg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sevenseg[6:0]</obj_property>
+      <obj_property name="ObjectShortName">sevenseg[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/picocputestbench/switches_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">switches_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">switches_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/picocputestbench/UUT/PicoCPU_comp/instr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instr[13:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[13:0]</obj_property>
+   </wvobject>
+</wave_config>

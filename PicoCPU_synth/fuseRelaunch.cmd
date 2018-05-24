@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPUTestBench_isim_beh.exe" -prj "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPUTestBench_beh.prj" "work.PicoCPUTestBench" 

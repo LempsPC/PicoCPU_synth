@@ -36,34 +36,42 @@ Setup/Hold to clock ClockSrc
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-rst         |    6.960(R)|      SLOW  |    4.270(R)|      SLOW  |SystemClk_BUFG    |   0.000|
+rst         |    3.944(R)|      SLOW  |    4.698(R)|      SLOW  |clk_out_OBUF_BUFG |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock clk
-------------+------------+------------+------------+------------+------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
-------------+------------+------------+------------+------------+------------------+--------+
-rst         |    7.047(R)|      SLOW  |    4.199(R)|      SLOW  |SystemClk_BUFG    |   0.000|
-            |    1.552(R)|      SLOW  |   -0.833(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
-------------+------------+------------+------------+------------+------------------+--------+
+--------------+------------+------------+------------+------------+------------------+--------+
+              |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source        | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+--------------+------------+------------+------------+------------+------------------+--------+
+Switches_in<0>|    0.855(R)|      FAST  |   -0.244(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+Switches_in<1>|    0.774(R)|      FAST  |   -0.170(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+Switches_in<2>|    0.610(R)|      FAST  |    0.051(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+Switches_in<3>|    0.699(R)|      FAST  |   -0.057(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+Switches_in<4>|    0.732(R)|      FAST  |   -0.118(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+Switches_in<5>|    0.634(R)|      FAST  |    0.023(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+Switches_in<6>|    0.579(R)|      FAST  |    0.093(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+Switches_in<7>|    0.703(R)|      FAST  |   -0.042(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+rst           |    5.466(R)|      SLOW  |   -3.217(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+              |    4.409(R)|      SLOW  |    4.215(R)|      SLOW  |clk_out_OBUF_BUFG |   0.000|
+--------------+------------+------------+------------+------------+------------------+--------+
 
 Clock ClockSrc to Pad
 -------------+-----------------+------------+-----------------+------------+------------------+--------+
              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination  |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 -------------+-----------------+------------+-----------------+------------+------------------+--------+
-FlagOutput<0>|        12.228(R)|      SLOW  |         7.117(R)|      FAST  |SystemClk_BUFG    |   0.000|
-FlagOutput<1>|        12.628(R)|      SLOW  |         7.375(R)|      FAST  |SystemClk_BUFG    |   0.000|
-FlagOutput<2>|        12.745(R)|      SLOW  |         7.456(R)|      FAST  |SystemClk_BUFG    |   0.000|
-FlagOutput<3>|        12.058(R)|      SLOW  |         7.044(R)|      FAST  |SystemClk_BUFG    |   0.000|
-SevenSeg<0>  |        16.954(R)|      SLOW  |         8.096(R)|      FAST  |SystemClk_BUFG    |   0.000|
-SevenSeg<1>  |        16.901(R)|      SLOW  |         8.048(R)|      FAST  |SystemClk_BUFG    |   0.000|
-SevenSeg<2>  |        16.469(R)|      SLOW  |         7.963(R)|      FAST  |SystemClk_BUFG    |   0.000|
-SevenSeg<3>  |        16.658(R)|      SLOW  |         8.080(R)|      FAST  |SystemClk_BUFG    |   0.000|
-SevenSeg<4>  |        16.699(R)|      SLOW  |         8.117(R)|      FAST  |SystemClk_BUFG    |   0.000|
-SevenSeg<5>  |        16.819(R)|      SLOW  |         8.193(R)|      FAST  |SystemClk_BUFG    |   0.000|
-SevenSeg<6>  |        16.665(R)|      SLOW  |         8.121(R)|      FAST  |SystemClk_BUFG    |   0.000|
+FlagOutput<0>|        12.646(R)|      SLOW  |         7.246(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+FlagOutput<1>|        12.924(R)|      SLOW  |         7.459(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+FlagOutput<2>|        13.862(R)|      SLOW  |         8.012(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+FlagOutput<3>|        12.802(R)|      SLOW  |         7.336(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+SevenSeg<0>  |        18.024(R)|      SLOW  |         8.883(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+SevenSeg<1>  |        17.820(R)|      SLOW  |         8.730(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+SevenSeg<2>  |        17.818(R)|      SLOW  |         8.733(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+SevenSeg<3>  |        17.991(R)|      SLOW  |         8.896(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+SevenSeg<4>  |        17.857(R)|      SLOW  |         8.631(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+SevenSeg<5>  |        17.609(R)|      SLOW  |         8.460(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+SevenSeg<6>  |        17.271(R)|      SLOW  |         8.450(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
 -------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -71,28 +79,28 @@ Clock clk to Pad
              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination  |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 -------------+-----------------+------------+-----------------+------------+------------------+--------+
-AN<0>        |         7.354(R)|      SLOW  |         3.734(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-AN<1>        |         7.325(R)|      SLOW  |         3.713(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-AN<2>        |         7.670(R)|      SLOW  |         3.928(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-AN<3>        |         7.490(R)|      SLOW  |         3.785(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-FlagOutput<0>|        12.157(R)|      SLOW  |         6.983(R)|      FAST  |SystemClk_BUFG    |   0.000|
-FlagOutput<1>|        12.557(R)|      SLOW  |         7.241(R)|      FAST  |SystemClk_BUFG    |   0.000|
-FlagOutput<2>|        12.674(R)|      SLOW  |         7.322(R)|      FAST  |SystemClk_BUFG    |   0.000|
-FlagOutput<3>|        11.987(R)|      SLOW  |         6.910(R)|      FAST  |SystemClk_BUFG    |   0.000|
-SevenSeg<0>  |        16.883(R)|      SLOW  |         7.962(R)|      FAST  |SystemClk_BUFG    |   0.000|
-             |        10.722(R)|      SLOW  |         4.293(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-SevenSeg<1>  |        16.830(R)|      SLOW  |         7.914(R)|      FAST  |SystemClk_BUFG    |   0.000|
-             |        10.669(R)|      SLOW  |         4.245(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-SevenSeg<2>  |        16.398(R)|      SLOW  |         7.829(R)|      FAST  |SystemClk_BUFG    |   0.000|
-             |        10.237(R)|      SLOW  |         4.160(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-SevenSeg<3>  |        16.587(R)|      SLOW  |         7.946(R)|      FAST  |SystemClk_BUFG    |   0.000|
-             |        10.426(R)|      SLOW  |         4.277(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-SevenSeg<4>  |        16.628(R)|      SLOW  |         7.983(R)|      FAST  |SystemClk_BUFG    |   0.000|
-             |        10.467(R)|      SLOW  |         4.314(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-SevenSeg<5>  |        16.748(R)|      SLOW  |         8.059(R)|      FAST  |SystemClk_BUFG    |   0.000|
-             |        10.587(R)|      SLOW  |         4.390(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-SevenSeg<6>  |        16.594(R)|      SLOW  |         7.987(R)|      FAST  |SystemClk_BUFG    |   0.000|
-             |        10.433(R)|      SLOW  |         4.299(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+AN<0>        |         7.703(R)|      SLOW  |         3.946(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+AN<1>        |         7.654(R)|      SLOW  |         3.923(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+AN<2>        |         7.667(R)|      SLOW  |         3.880(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+AN<3>        |         7.467(R)|      SLOW  |         3.735(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+FlagOutput<0>|        12.163(R)|      SLOW  |         6.916(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+FlagOutput<1>|        12.441(R)|      SLOW  |         7.129(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+FlagOutput<2>|        13.379(R)|      SLOW  |         7.682(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+FlagOutput<3>|        12.319(R)|      SLOW  |         7.006(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+SevenSeg<0>  |        11.458(R)|      SLOW  |         4.697(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+             |        17.541(R)|      SLOW  |         8.553(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+SevenSeg<1>  |        11.254(R)|      SLOW  |         4.544(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+             |        17.337(R)|      SLOW  |         8.400(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+SevenSeg<2>  |        11.252(R)|      SLOW  |         4.601(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+             |        17.335(R)|      SLOW  |         8.403(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+SevenSeg<3>  |        11.425(R)|      SLOW  |         4.764(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+             |        17.508(R)|      SLOW  |         8.566(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+SevenSeg<4>  |        11.291(R)|      SLOW  |         4.539(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+             |        17.374(R)|      SLOW  |         8.301(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+SevenSeg<5>  |        11.043(R)|      SLOW  |         4.368(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+             |        17.126(R)|      SLOW  |         8.130(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+SevenSeg<6>  |        10.705(R)|      SLOW  |         4.227(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+             |        16.788(R)|      SLOW  |         8.120(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
 -------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock ClockSrc
@@ -100,8 +108,8 @@ Clock to Setup on destination clock ClockSrc
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ClockSrc       |   14.913|         |         |         |
-clk            |   14.913|         |         |         |
+ClockSrc       |   15.306|         |         |         |
+clk            |   15.306|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -109,19 +117,27 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ClockSrc       |   14.913|         |         |         |
-clk            |   14.913|         |         |         |
+ClockSrc       |   15.306|         |         |         |
+clk            |   15.306|         |         |         |
 ---------------+---------+---------+---------+---------+
 
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+ClockSrc       |clk_out        |   11.945|
+clk            |clk_out        |   11.462|
+---------------+---------------+---------+
 
-Analysis completed Fri May 18 14:16:44 2018 
+
+Analysis completed Wed May 23 16:11:42 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 425 MB
+Peak Memory Usage: 426 MB
 
 
 

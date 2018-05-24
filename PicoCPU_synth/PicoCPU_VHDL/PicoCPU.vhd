@@ -56,7 +56,7 @@ architecture RTL of PicoCPU is
 			Reg_out_sel: in std_logic_vector (2 downto 0); 
          rst: in std_logic;
          DPU_Flags: out std_logic_vector (3 downto 0);
-         Result: out std_logic_vector (BitWidth-1 downto 0) 
+			Result: out std_logic_vector (BitWidth-1 downto 0) 
   );
   end component;
   ----------------------------------------
@@ -69,6 +69,7 @@ architecture RTL of PicoCPU is
          clk: in std_logic;
          RW: in std_logic;
          rst: in std_logic;
+			Debug_Out: out std_logic_vector (BitWidth-1 downto 0);
          Data_Out: out std_logic_vector (BitWidth-1 downto 0) 
     );
   end component;
@@ -109,8 +110,8 @@ begin
   --memory
   Mem_comp: Mem 
   generic map (BitWidth => CPU_Bitwidth)
-  port map (Mem_Rd_Address, DPU_Result,Mem_Wrt_Address, Switches_in, clk,MemRW , rst , MEMDATA);  
+  port map (Mem_Rd_Address, DPU_Result,Mem_Wrt_Address, Switches_in, clk,MemRW , rst ,output, MEMDATA);  
   
   FlagOut <=	DPUFlags;
-  output <= DPU_Result;
+  --output <= DPU_Result;
 end RTL;

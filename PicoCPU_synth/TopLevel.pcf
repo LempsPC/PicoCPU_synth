@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri May 18 14:16:04 2018
+// Written by: Map P.20131013 on Wed May 23 16:11:07 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -10,7 +10,7 @@ COMP "AN<0>" LOCATE = SITE "N16" LEVEL 1;
 COMP "AN<1>" LOCATE = SITE "N15" LEVEL 1;
 COMP "AN<2>" LOCATE = SITE "P18" LEVEL 1;
 COMP "AN<3>" LOCATE = SITE "P17" LEVEL 1;
-COMP "ClockSrc" LOCATE = SITE "T10" LEVEL 1;
+COMP "ClockSrc" LOCATE = SITE "C9" LEVEL 1;
 COMP "SevenSeg<0>" LOCATE = SITE "L14" LEVEL 1;
 COMP "SevenSeg<1>" LOCATE = SITE "N14" LEVEL 1;
 COMP "SevenSeg<2>" LOCATE = SITE "M14" LEVEL 1;
@@ -18,6 +18,15 @@ COMP "SevenSeg<3>" LOCATE = SITE "U18" LEVEL 1;
 COMP "SevenSeg<4>" LOCATE = SITE "U17" LEVEL 1;
 COMP "SevenSeg<5>" LOCATE = SITE "T18" LEVEL 1;
 COMP "SevenSeg<6>" LOCATE = SITE "T17" LEVEL 1;
+COMP "clk_out" LOCATE = SITE "T11" LEVEL 1;
+COMP "Switches_in<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "Switches_in<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "Switches_in<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "Switches_in<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "Switches_in<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "Switches_in<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "Switches_in<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "Switches_in<7>" LOCATE = SITE "T5" LEVEL 1;
 COMP "FlagOutput<0>" LOCATE = SITE "U16" LEVEL 1;
 COMP "FlagOutput<1>" LOCATE = SITE "V16" LEVEL 1;
 COMP "FlagOutput<2>" LOCATE = SITE "U15" LEVEL 1;

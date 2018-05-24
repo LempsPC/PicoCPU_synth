@@ -1,0 +1,28 @@
+Command line:
+   PicoCPUTestBench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53959
+
+Wed May 23 15:35:03 2018
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 245.334 Meg
+
+ Total Signals          : 258
+ Total Nets             : 2691
+ Total Signal Drivers   : 122
+ Total Blocks           : 51
+ Total Primitive Blocks : 29
+ Total Processes        : 68
+ Total Traceable Variables  : 81
+ Total Scalar Nets and Variables : 7113
+
+ Total Simulation Time: 0.03 sec
+
+ Current Memory Usage: 320.836 Meg
+
+Wed May 23 15:48:02 2018
+

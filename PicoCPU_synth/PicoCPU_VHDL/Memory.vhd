@@ -11,7 +11,8 @@ entity Mem is
          clk: in std_logic;
          RW: in std_logic;
          rst: in std_logic;
-         Data_Out: out std_logic_vector (BitWidth-1 downto 0) 
+			Debug_Out: out std_logic_vector (BitWidth-1 downto 0);
+         Data_Out: out std_logic_vector (BitWidth-1 downto 0)
     );
 end Mem;
 
@@ -31,11 +32,13 @@ begin
       if RW = '1' then
         Mem(to_integer(unsigned(WrtAddress(7 downto 0)))) <= Data_in;
       end if;
-		Mem(1) <= (Switches_in(7 downto 4) & "0000");
-		Mem(2) <= "0000" & (Switches_in( 3 downto 0));
+		Mem(1) <= (Switches_in(7 downto 4) & "0000"); --commands 4-bit
+		Mem(2) <= "0000" & (Switches_in( 3 downto 0)); --operands
+		Mem(0) <= "00000000"; --let's put 5 in mem(0)
+		
     end if;
   end process MemProcess;
 
+  Debug_out <= Mem(4);
   Data_Out <= Mem(to_integer(unsigned(RdAddress(7 downto 0))));
-  
 end beh;

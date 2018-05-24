@@ -4,14 +4,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.06 secs
  
 --> 
@@ -108,40 +108,43 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/FullAdder.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/FullAdder.vhd" into library work
 Parsing entity <FullAdderSub>.
 Parsing architecture <Behavioral> of entity <fulladdersub>.
-Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/Adder.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/Adder.vhd" into library work
 Parsing entity <Adder_Sub>.
 Parsing architecture <RTL> of entity <adder_sub>.
-Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/RegisterFile.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/RegisterFile.vhd" into library work
 Parsing entity <RegisterFile>.
 Parsing architecture <Behavioral> of entity <registerfile>.
-Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/ALU.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/ALU.vhd" into library work
 Parsing entity <ALU>.
 Parsing architecture <RTL> of entity <alu>.
-Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/Memory.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/Memory.vhd" into library work
 Parsing entity <Mem>.
 Parsing architecture <beh> of entity <mem>.
-Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/InstMem.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/InstMem.vhd" into library work
 Parsing entity <InstMem>.
 Parsing architecture <behavioral> of entity <instmem>.
-Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/DPU.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/DPU.vhd" into library work
 Parsing entity <DPU>.
 Parsing architecture <RTL> of entity <dpu>.
-Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/Controller.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/Controller.vhd" into library work
 Parsing entity <ControlUnit>.
 Parsing architecture <RTL> of entity <controlunit>.
-Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/VectorToSevenSeg.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/VectorToSevenSeg.vhd" into library work
 Parsing entity <VectorToSevenSeg>.
 Parsing architecture <Behavioral> of entity <vectortosevenseg>.
-Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/PicoCPU.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/PicoCPU.vhd" into library work
 Parsing entity <PicoCPU>.
 Parsing architecture <RTL> of entity <picocpu>.
-Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/Debouncer.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/Debouncer.vhd" into library work
 Parsing entity <Debouncer>.
 Parsing architecture <Behavioral> of entity <debouncer>.
-Parsing VHDL file "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/TopLevel.vhd" into library work
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/Debouncer2.vhd" into library work
+Parsing entity <debouncer2>.
+Parsing architecture <Behavioral> of entity <debouncer2>.
+Parsing VHDL file "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/TopLevel.vhd" into library work
 Parsing entity <TopLevel>.
 Parsing architecture <Behavioral> of entity <toplevel>.
 
@@ -152,6 +155,9 @@ Parsing architecture <Behavioral> of entity <toplevel>.
 Elaborating entity <TopLevel> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <Debouncer> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <debouncer2> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:634 - "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/Debouncer2.vhd" Line 44: Net <counter_set> does not have a driver.
 
 Elaborating entity <PicoCPU> (architecture <RTL>) from library <work>.
 
@@ -166,11 +172,11 @@ Elaborating entity <ALU> (architecture <RTL>) with generics from library <work>.
 Elaborating entity <Adder_Sub> (architecture <RTL>) with generics from library <work>.
 
 Elaborating entity <FullAdderSub> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/ALU.vhd" Line 74. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/ALU.vhd" Line 74. Case statement is complete. others clause is never selected
 
 Elaborating entity <RegisterFile> (architecture <Behavioral>) with generics from library <work>.
-INFO:HDLCompiler:679 - "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/RegisterFile.vhd" Line 124. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/DPU.vhd" Line 112. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/RegisterFile.vhd" Line 124. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/DPU.vhd" Line 112. Case statement is complete. others clause is never selected
 
 Elaborating entity <Mem> (architecture <beh>) with generics from library <work>.
 
@@ -181,13 +187,13 @@ Elaborating entity <VectorToSevenSeg> (architecture <Behavioral>) from library <
 =========================================================================
 
 Synthesizing Unit <TopLevel>.
-    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/TopLevel.vhd".
+    Related source file is "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/TopLevel.vhd".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <TopLevel> synthesized.
 
 Synthesizing Unit <Debouncer>.
-    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/Debouncer.vhd".
+    Related source file is "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/Debouncer.vhd".
     Found 11-bit register for signal <counter>.
     Found 3-bit register for signal <ShiftReg>.
     Found 11-bit adder for signal <counter_in> created at line 26.
@@ -196,14 +202,27 @@ Synthesizing Unit <Debouncer>.
 	inferred  14 D-type flip-flop(s).
 Unit <Debouncer> synthesized.
 
+Synthesizing Unit <debouncer2>.
+    Related source file is "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/Debouncer2.vhd".
+        counter_size = 19
+WARNING:Xst:653 - Signal <counter_set> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 20-bit register for signal <counter_out>.
+    Found 1-bit register for signal <result>.
+    Found 2-bit register for signal <flipflops>.
+    Found 20-bit adder for signal <counter_out[19]_GND_7_o_add_0_OUT> created at line 56.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+Unit <debouncer2> synthesized.
+
 Synthesizing Unit <PicoCPU>.
-    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/PicoCPU.vhd".
+    Related source file is "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/PicoCPU.vhd".
     Summary:
 	no macro.
 Unit <PicoCPU> synthesized.
 
 Synthesizing Unit <ControlUnit>.
-    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/Controller.vhd".
+    Related source file is "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/Controller.vhd".
         BitWidth = 8
         InstructionWidth = 14
     Found 8-bit register for signal <SP_out>.
@@ -225,11 +244,11 @@ Synthesizing Unit <ControlUnit>.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 8-bit adder for signal <PC_out[7]_InstrReg_out[7]_add_205_OUT> created at line 308.
-    Found 8-bit adder for signal <SP_out[7]_GND_8_o_add_209_OUT> created at line 320.
-    Found 8-bit adder for signal <PC_out[7]_GND_8_o_add_210_OUT> created at line 323.
-    Found 8-bit subtractor for signal <GND_8_o_GND_8_o_sub_32_OUT<7:0>> created at line 251.
+    Found 8-bit adder for signal <SP_out[7]_GND_9_o_add_209_OUT> created at line 320.
+    Found 8-bit adder for signal <PC_out[7]_GND_9_o_add_210_OUT> created at line 323.
+    Found 8-bit subtractor for signal <GND_9_o_GND_9_o_sub_32_OUT<7:0>> created at line 251.
     Found 64x6-bit Read Only RAM for signal <Instr>
-    Found 64x11-bit Read Only RAM for signal <GND_8_o_GND_8_o_mux_67_OUT>
+    Found 64x11-bit Read Only RAM for signal <GND_9_o_GND_9_o_mux_67_OUT>
     Summary:
 	inferred   2 RAM(s).
 	inferred   4 Adder/Subtractor(s).
@@ -239,7 +258,7 @@ Synthesizing Unit <ControlUnit>.
 Unit <ControlUnit> synthesized.
 
 Synthesizing Unit <InstMem>.
-    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/InstMem.vhd".
+    Related source file is "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/InstMem.vhd".
         BitWidth = 8
         InstructionWidth = 14
     Found 256x14-bit Read Only RAM for signal <data>
@@ -248,7 +267,7 @@ Synthesizing Unit <InstMem>.
 Unit <InstMem> synthesized.
 
 Synthesizing Unit <DPU>.
-    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/DPU.vhd".
+    Related source file is "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/DPU.vhd".
         BitWidth = 8
     Found 8-bit register for signal <ACC_out>.
     Found 1-bit register for signal <OV_Flag_out>.
@@ -264,9 +283,9 @@ Synthesizing Unit <DPU>.
 Unit <DPU> synthesized.
 
 Synthesizing Unit <ALU>.
-    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/ALU.vhd".
+    Related source file is "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/ALU.vhd".
         BitWidth = 8
-    Found 8-bit adder for signal <A[7]_GND_13_o_add_4_OUT> created at line 67.
+    Found 8-bit adder for signal <A[7]_GND_14_o_add_4_OUT> created at line 67.
     Found 16x1-bit Read Only RAM for signal <Add_Sub>
     Found 8-bit 15-to-1 multiplexer for signal <Result> created at line 56.
     Summary:
@@ -276,19 +295,19 @@ Synthesizing Unit <ALU>.
 Unit <ALU> synthesized.
 
 Synthesizing Unit <Adder_Sub>.
-    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/Adder.vhd".
+    Related source file is "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/Adder.vhd".
         BitWidth = 8
     Summary:
 	no macro.
 Unit <Adder_Sub> synthesized.
 
 Synthesizing Unit <FullAdderSub>.
-    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/FullAdder.vhd".
+    Related source file is "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/FullAdder.vhd".
     Summary:
 Unit <FullAdderSub> synthesized.
 
 Synthesizing Unit <RegisterFile>.
-    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/RegisterFile.vhd".
+    Related source file is "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/RegisterFile.vhd".
         BitWidth = 8
     Found 8-bit register for signal <R1_out>.
     Found 8-bit register for signal <R2_out>.
@@ -306,7 +325,7 @@ Synthesizing Unit <RegisterFile>.
 Unit <RegisterFile> synthesized.
 
 Synthesizing Unit <Mem>.
-    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/Memory.vhd".
+    Related source file is "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/Memory.vhd".
         BitWidth = 8
     Found 4-bit register for signal <Mem<2>>.
     Found 8-bit register for signal <Mem<1>>.
@@ -563,40 +582,40 @@ Synthesizing Unit <Mem>.
     Found 8-bit register for signal <Mem<253>>.
     Found 8-bit register for signal <Mem<254>>.
     Found 8-bit register for signal <Mem<255>>.
-    Found 8-bit register for signal <Mem<0>>.
-    Found 8-bit 256-to-1 multiplexer for signal <Data_Out> created at line 39.
+    Found 8-bit 256-to-1 multiplexer for signal <Data_Out> created at line 43.
     WARNING:Xst:2404 -  FFs/Latches <Mem<2><7:4>> (without init value) have a constant value of 0 in block <Mem>.
+    WARNING:Xst:2404 -  FFs/Latches <Mem<0><1:8>> (without init value) have a constant value of 0 in block <Mem>.
     Summary:
-	inferred 2044 D-type flip-flop(s).
+	inferred 2036 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
 Unit <Mem> synthesized.
 
 Synthesizing Unit <VectorToSevenSeg>.
-    Related source file is "/home/lembitu.valdmets/PicoCPU_synth/PicoCPU_VHDL/VectorToSevenSeg.vhd".
+    Related source file is "/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/PicoCPU_VHDL/VectorToSevenSeg.vhd".
     Found 20-bit register for signal <counter>.
-    Found 20-bit adder for signal <counter[19]_GND_19_o_add_0_OUT> created at line 24.
-    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_3_OUT> created at line 38.
-    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_6_OUT> created at line 41.
-    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_8_OUT> created at line 38.
-    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_10_OUT> created at line 41.
-    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_12_OUT> created at line 38.
-    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_14_OUT> created at line 41.
-    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_16_OUT> created at line 38.
-    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_18_OUT> created at line 41.
+    Found 20-bit adder for signal <counter[19]_GND_20_o_add_0_OUT> created at line 24.
+    Found 4-bit adder for signal <GND_20_o_GND_20_o_add_3_OUT> created at line 38.
+    Found 4-bit adder for signal <GND_20_o_GND_20_o_add_6_OUT> created at line 41.
+    Found 4-bit adder for signal <GND_20_o_GND_20_o_add_8_OUT> created at line 38.
+    Found 4-bit adder for signal <GND_20_o_GND_20_o_add_10_OUT> created at line 41.
+    Found 4-bit adder for signal <GND_20_o_GND_20_o_add_12_OUT> created at line 38.
+    Found 4-bit adder for signal <GND_20_o_GND_20_o_add_14_OUT> created at line 41.
+    Found 4-bit adder for signal <GND_20_o_GND_20_o_add_16_OUT> created at line 38.
+    Found 4-bit adder for signal <GND_20_o_GND_20_o_add_18_OUT> created at line 41.
     Found 16x7-bit Read Only RAM for signal <SevenSeg>
     Found 4x4-bit Read Only RAM for signal <AN>
     Found 1-bit 4-to-1 multiplexer for signal <SvSegIn<3>> created at line 71.
     Found 1-bit 4-to-1 multiplexer for signal <SvSegIn<2>> created at line 71.
     Found 1-bit 4-to-1 multiplexer for signal <SvSegIn<0>> created at line 71.
     Found 1-bit 4-to-1 multiplexer for signal <SvSegIn<1>> created at line 71.
-    Found 3-bit comparator greater for signal <PWR_21_o_InputVector[6]_LessThan_3_o> created at line 37
-    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_6_o> created at line 40
-    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_8_o> created at line 37
-    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_10_o> created at line 40
-    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_12_o> created at line 37
-    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_14_o> created at line 40
-    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_16_o> created at line 37
-    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_18_o> created at line 40
+    Found 3-bit comparator greater for signal <PWR_22_o_InputVector[6]_LessThan_3_o> created at line 37
+    Found 4-bit comparator greater for signal <GND_20_o_GND_20_o_LessThan_6_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_20_o_GND_20_o_LessThan_8_o> created at line 37
+    Found 4-bit comparator greater for signal <GND_20_o_GND_20_o_LessThan_10_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_20_o_GND_20_o_LessThan_12_o> created at line 37
+    Found 4-bit comparator greater for signal <GND_20_o_GND_20_o_LessThan_14_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_20_o_GND_20_o_LessThan_16_o> created at line 37
+    Found 4-bit comparator greater for signal <GND_20_o_GND_20_o_LessThan_18_o> created at line 40
     Summary:
 	inferred   2 RAM(s).
 	inferred   9 Adder/Subtractor(s).
@@ -616,21 +635,22 @@ Macro Statistics
  4x4-bit single-port Read Only RAM                     : 1
  64x11-bit single-port Read Only RAM                   : 1
  64x6-bit single-port Read Only RAM                    : 1
-# Adders/Subtractors                                   : 15
+# Adders/Subtractors                                   : 23
  11-bit adder                                          : 1
- 20-bit adder                                          : 1
+ 20-bit adder                                          : 9
  4-bit adder                                           : 8
  8-bit adder                                           : 3
  8-bit addsub                                          : 1
  8-bit subtractor                                      : 1
-# Registers                                            : 275
- 1-bit register                                        : 4
+# Registers                                            : 298
+ 1-bit register                                        : 12
  11-bit register                                       : 1
  14-bit register                                       : 1
- 20-bit register                                       : 1
+ 2-bit register                                        : 8
+ 20-bit register                                       : 9
  3-bit register                                        : 1
  4-bit register                                        : 1
- 8-bit register                                        : 266
+ 8-bit register                                        : 265
 # Comparators                                          : 9
  3-bit comparator greater                              : 1
  4-bit comparator greater                              : 7
@@ -688,7 +708,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Instr> will be implemented on LUTs e
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to signal <Instr>         |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_GND_8_o_GND_8_o_mux_67_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_GND_9_o_GND_9_o_mux_67_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -746,6 +766,10 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_SevenSeg> will be implemented on LUT
     -----------------------------------------------------------------------
 Unit <VectorToSevenSeg> synthesized (advanced).
 
+Synthesizing (advanced) Unit <debouncer2>.
+The following registers are absorbed into counter <counter_out>: 1 register on signal <counter_out>.
+Unit <debouncer2> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
@@ -761,25 +785,25 @@ Macro Statistics
  4-bit adder                                           : 8
  8-bit adder                                           : 3
  8-bit subtractor                                      : 1
-# Counters                                             : 3
+# Counters                                             : 11
  11-bit up counter                                     : 1
- 20-bit up counter                                     : 1
+ 20-bit up counter                                     : 9
  8-bit updown counter                                  : 1
-# Registers                                            : 2145
- Flip-Flops                                            : 2145
+# Registers                                            : 2161
+ Flip-Flops                                            : 2161
 # Comparators                                          : 9
  3-bit comparator greater                              : 1
  4-bit comparator greater                              : 7
  8-bit comparator equal                                : 1
-# Multiplexers                                         : 86
- 1-bit 2-to-1 multiplexer                              : 44
+# Multiplexers                                         : 94
+ 1-bit 2-to-1 multiplexer                              : 45
+ 1-bit 256-to-1 multiplexer                            : 8
  1-bit 4-to-1 multiplexer                              : 4
  11-bit 2-to-1 multiplexer                             : 1
  12-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 2
  8-bit 15-to-1 multiplexer                             : 1
  8-bit 2-to-1 multiplexer                              : 29
- 8-bit 256-to-1 multiplexer                            : 1
  8-bit 4-to-1 multiplexer                              : 2
  8-bit 8-to-1 multiplexer                              : 1
 # FSMs                                                 : 1
@@ -822,6 +846,26 @@ Optimizing unit <ALU> ...
 Optimizing unit <Adder_Sub> ...
 
 Optimizing unit <VectorToSevenSeg> ...
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_10> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_10> <Debouncer_generator[4].Debouncer/counter_out_10> <Debouncer_generator[5].Debouncer/counter_out_10> <Debouncer_generator[3].Debouncer/counter_out_10> <Debouncer_generator[2].Debouncer/counter_out_10> <Debouncer_generator[0].Debouncer/counter_out_10> <Debouncer_generator[1].Debouncer/counter_out_10> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_11> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_11> <Debouncer_generator[4].Debouncer/counter_out_11> <Debouncer_generator[5].Debouncer/counter_out_11> <Debouncer_generator[3].Debouncer/counter_out_11> <Debouncer_generator[2].Debouncer/counter_out_11> <Debouncer_generator[0].Debouncer/counter_out_11> <Debouncer_generator[1].Debouncer/counter_out_11> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_12> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_12> <Debouncer_generator[4].Debouncer/counter_out_12> <Debouncer_generator[5].Debouncer/counter_out_12> <Debouncer_generator[3].Debouncer/counter_out_12> <Debouncer_generator[2].Debouncer/counter_out_12> <Debouncer_generator[0].Debouncer/counter_out_12> <Debouncer_generator[1].Debouncer/counter_out_12> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_13> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_13> <Debouncer_generator[4].Debouncer/counter_out_13> <Debouncer_generator[5].Debouncer/counter_out_13> <Debouncer_generator[3].Debouncer/counter_out_13> <Debouncer_generator[2].Debouncer/counter_out_13> <Debouncer_generator[0].Debouncer/counter_out_13> <Debouncer_generator[1].Debouncer/counter_out_13> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_14> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_14> <Debouncer_generator[4].Debouncer/counter_out_14> <Debouncer_generator[5].Debouncer/counter_out_14> <Debouncer_generator[3].Debouncer/counter_out_14> <Debouncer_generator[2].Debouncer/counter_out_14> <Debouncer_generator[0].Debouncer/counter_out_14> <Debouncer_generator[1].Debouncer/counter_out_14> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_15> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_15> <Debouncer_generator[4].Debouncer/counter_out_15> <Debouncer_generator[5].Debouncer/counter_out_15> <Debouncer_generator[3].Debouncer/counter_out_15> <Debouncer_generator[2].Debouncer/counter_out_15> <Debouncer_generator[0].Debouncer/counter_out_15> <Debouncer_generator[1].Debouncer/counter_out_15> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_16> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_16> <Debouncer_generator[4].Debouncer/counter_out_16> <Debouncer_generator[5].Debouncer/counter_out_16> <Debouncer_generator[3].Debouncer/counter_out_16> <Debouncer_generator[2].Debouncer/counter_out_16> <Debouncer_generator[0].Debouncer/counter_out_16> <Debouncer_generator[1].Debouncer/counter_out_16> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_17> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_17> <Debouncer_generator[4].Debouncer/counter_out_17> <Debouncer_generator[5].Debouncer/counter_out_17> <Debouncer_generator[3].Debouncer/counter_out_17> <Debouncer_generator[2].Debouncer/counter_out_17> <Debouncer_generator[0].Debouncer/counter_out_17> <Debouncer_generator[1].Debouncer/counter_out_17> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_18> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_18> <Debouncer_generator[4].Debouncer/counter_out_18> <Debouncer_generator[5].Debouncer/counter_out_18> <Debouncer_generator[3].Debouncer/counter_out_18> <Debouncer_generator[2].Debouncer/counter_out_18> <Debouncer_generator[0].Debouncer/counter_out_18> <Debouncer_generator[1].Debouncer/counter_out_18> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_19> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_19> <Debouncer_generator[4].Debouncer/counter_out_19> <Debouncer_generator[5].Debouncer/counter_out_19> <Debouncer_generator[3].Debouncer/counter_out_19> <Debouncer_generator[2].Debouncer/counter_out_19> <Debouncer_generator[0].Debouncer/counter_out_19> <Debouncer_generator[1].Debouncer/counter_out_19> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_0> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_0> <Debouncer_generator[4].Debouncer/counter_out_0> <Debouncer_generator[5].Debouncer/counter_out_0> <Debouncer_generator[3].Debouncer/counter_out_0> <Debouncer_generator[2].Debouncer/counter_out_0> <Debouncer_generator[0].Debouncer/counter_out_0> <Debouncer_generator[1].Debouncer/counter_out_0> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_1> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_1> <Debouncer_generator[4].Debouncer/counter_out_1> <Debouncer_generator[5].Debouncer/counter_out_1> <Debouncer_generator[3].Debouncer/counter_out_1> <Debouncer_generator[2].Debouncer/counter_out_1> <Debouncer_generator[0].Debouncer/counter_out_1> <Debouncer_generator[1].Debouncer/counter_out_1> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_2> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_2> <Debouncer_generator[4].Debouncer/counter_out_2> <Debouncer_generator[5].Debouncer/counter_out_2> <Debouncer_generator[3].Debouncer/counter_out_2> <Debouncer_generator[2].Debouncer/counter_out_2> <Debouncer_generator[0].Debouncer/counter_out_2> <Debouncer_generator[1].Debouncer/counter_out_2> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_3> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_3> <Debouncer_generator[4].Debouncer/counter_out_3> <Debouncer_generator[5].Debouncer/counter_out_3> <Debouncer_generator[3].Debouncer/counter_out_3> <Debouncer_generator[2].Debouncer/counter_out_3> <Debouncer_generator[0].Debouncer/counter_out_3> <Debouncer_generator[1].Debouncer/counter_out_3> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_4> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_4> <Debouncer_generator[4].Debouncer/counter_out_4> <Debouncer_generator[5].Debouncer/counter_out_4> <Debouncer_generator[3].Debouncer/counter_out_4> <Debouncer_generator[2].Debouncer/counter_out_4> <Debouncer_generator[0].Debouncer/counter_out_4> <Debouncer_generator[1].Debouncer/counter_out_4> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_5> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_5> <Debouncer_generator[4].Debouncer/counter_out_5> <Debouncer_generator[5].Debouncer/counter_out_5> <Debouncer_generator[3].Debouncer/counter_out_5> <Debouncer_generator[2].Debouncer/counter_out_5> <Debouncer_generator[0].Debouncer/counter_out_5> <Debouncer_generator[1].Debouncer/counter_out_5> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_6> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_6> <Debouncer_generator[4].Debouncer/counter_out_6> <Debouncer_generator[5].Debouncer/counter_out_6> <Debouncer_generator[3].Debouncer/counter_out_6> <Debouncer_generator[2].Debouncer/counter_out_6> <Debouncer_generator[0].Debouncer/counter_out_6> <Debouncer_generator[1].Debouncer/counter_out_6> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_7> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_7> <Debouncer_generator[4].Debouncer/counter_out_7> <Debouncer_generator[5].Debouncer/counter_out_7> <Debouncer_generator[3].Debouncer/counter_out_7> <Debouncer_generator[2].Debouncer/counter_out_7> <Debouncer_generator[0].Debouncer/counter_out_7> <Debouncer_generator[1].Debouncer/counter_out_7> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_8> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_8> <Debouncer_generator[4].Debouncer/counter_out_8> <Debouncer_generator[5].Debouncer/counter_out_8> <Debouncer_generator[3].Debouncer/counter_out_8> <Debouncer_generator[2].Debouncer/counter_out_8> <Debouncer_generator[0].Debouncer/counter_out_8> <Debouncer_generator[1].Debouncer/counter_out_8> 
+INFO:Xst:2261 - The FF/Latch <Debouncer_generator[7].Debouncer/counter_out_9> in Unit <TopLevel> is equivalent to the following 7 FFs/Latches, which will be removed : <Debouncer_generator[6].Debouncer/counter_out_9> <Debouncer_generator[4].Debouncer/counter_out_9> <Debouncer_generator[5].Debouncer/counter_out_9> <Debouncer_generator[3].Debouncer/counter_out_9> <Debouncer_generator[2].Debouncer/counter_out_9> <Debouncer_generator[0].Debouncer/counter_out_9> <Debouncer_generator[1].Debouncer/counter_out_9> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -831,12 +875,25 @@ FlipFlop PicoCPU_comp/ControlUnit_comp/State_out_FSM_FFd2 has been replicated 2 
 
 Final Macro Processing ...
 
+Processing Unit <TopLevel> :
+	Found 2-bit shift register for signal <Debouncer_generator[7].Debouncer/flipflops_1>.
+	Found 2-bit shift register for signal <Debouncer_generator[6].Debouncer/flipflops_1>.
+	Found 2-bit shift register for signal <Debouncer_generator[5].Debouncer/flipflops_1>.
+	Found 2-bit shift register for signal <Debouncer_generator[4].Debouncer/flipflops_1>.
+	Found 2-bit shift register for signal <Debouncer_generator[3].Debouncer/flipflops_1>.
+	Found 2-bit shift register for signal <Debouncer_generator[2].Debouncer/flipflops_1>.
+	Found 2-bit shift register for signal <Debouncer_generator[1].Debouncer/flipflops_1>.
+	Found 2-bit shift register for signal <Debouncer_generator[0].Debouncer/flipflops_1>.
+Unit <TopLevel> processed.
+
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2185
- Flip-Flops                                            : 2185
+# Registers                                            : 2205
+ Flip-Flops                                            : 2205
+# Shift Registers                                      : 8
+ 2-bit shift register                                  : 8
 
 =========================================================================
 
@@ -859,29 +916,32 @@ Top Level Output File Name         : TopLevel.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1784
+# BELS                             : 1850
 #      GND                         : 1
-#      INV                         : 3
-#      LUT1                        : 29
-#      LUT2                        : 20
-#      LUT3                        : 51
-#      LUT4                        : 41
-#      LUT5                        : 303
-#      LUT6                        : 806
-#      MUXCY                       : 43
+#      INV                         : 5
+#      LUT1                        : 48
+#      LUT2                        : 21
+#      LUT3                        : 54
+#      LUT4                        : 48
+#      LUT5                        : 293
+#      LUT6                        : 811
+#      MUXCY                       : 62
 #      MUXF7                       : 303
 #      MUXF8                       : 136
 #      VCC                         : 1
-#      XORCY                       : 47
-# FlipFlops/Latches                : 2185
+#      XORCY                       : 67
+# FlipFlops/Latches                : 2205
 #      FD                          : 23
 #      FDC                         : 48
-#      FDCE                        : 2114
+#      FDCE                        : 2106
+#      FDE                         : 28
+# Shift Registers                  : 8
+#      SRLC16E                     : 8
 # Clock Buffers                    : 2
 #      BUFG                        : 2
-# IO Buffers                       : 27
+# IO Buffers                       : 28
 #      IBUF                        : 12
-#      OBUF                        : 15
+#      OBUF                        : 16
 
 Device utilization summary:
 ---------------------------
@@ -890,20 +950,22 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2185  out of  18224    11%  
- Number of Slice LUTs:                 1253  out of   9112    13%  
-    Number used as Logic:              1253  out of   9112    13%  
+ Number of Slice Registers:            2205  out of  18224    12%  
+ Number of Slice LUTs:                 1288  out of   9112    14%  
+    Number used as Logic:              1280  out of   9112    14%  
+    Number used as Memory:                8  out of   2176     0%  
+       Number used as SRL:                8
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3360
-   Number with an unused Flip Flop:    1175  out of   3360    34%  
-   Number with an unused LUT:          2107  out of   3360    62%  
-   Number of fully used LUT-FF pairs:    78  out of   3360     2%  
-   Number of unique control sets:       270
+ Number of LUT Flip Flop pairs used:   3387
+   Number with an unused Flip Flop:    1182  out of   3387    34%  
+   Number with an unused LUT:          2099  out of   3387    61%  
+   Number of fully used LUT-FF pairs:   106  out of   3387     3%  
+   Number of unique control sets:       271
 
 IO Utilization: 
- Number of IOs:                          27
- Number of bonded IOBs:                  27  out of    232    11%  
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    232    12%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
@@ -930,8 +992,8 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)                 | Load  |
 -----------------------------------+---------------------------------------+-------+
 Debouncer_comp/counter_10          | NONE(Debouncer_comp/ShiftReg_2)       | 3     |
-clk                                | IBUF+BUFG                             | 31    |
-SystemClk(Mmux_SystemClk11:O)      | BUFG(*)(PicoCPU_comp/Mem_comp/Mem_1_7)| 2151  |
+clk                                | IBUF+BUFG                             | 67    |
+clk_out_OBUF(Mmux_clk_out11:O)     | BUFG(*)(PicoCPU_comp/Mem_comp/Mem_1_7)| 2143  |
 -----------------------------------+---------------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -947,9 +1009,9 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 15.033ns (Maximum Frequency: 66.522MHz)
-   Minimum input arrival time before clock: 4.137ns
-   Maximum output required time after clock: 10.263ns
-   Maximum combinational path delay: No path found
+   Minimum input arrival time before clock: 4.136ns
+   Maximum output required time after clock: 9.105ns
+   Maximum combinational path delay: 5.499ns
 
 Timing Details:
 ---------------
@@ -978,56 +1040,36 @@ Delay:               1.165ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 2.028ns (frequency: 493.133MHz)
-  Total number of paths / destination ports: 276 / 31
+  Clock period: 2.923ns (frequency: 342.091MHz)
+  Total number of paths / destination ports: 522 / 87
 -------------------------------------------------------------------------
-Delay:               2.028ns (Levels of Logic = 21)
-  Source:            SevSeg_comp/counter_0 (FF)
-  Destination:       SevSeg_comp/counter_19 (FF)
+Delay:               2.923ns (Levels of Logic = 1)
+  Source:            Debouncer_generator[7].Debouncer/counter_out_19 (FF)
+  Destination:       Debouncer_generator[7].Debouncer/counter_out_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: SevSeg_comp/counter_0 to SevSeg_comp/counter_19
+  Data Path: Debouncer_generator[7].Debouncer/counter_out_19 to Debouncer_generator[7].Debouncer/counter_out_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.447   0.579  SevSeg_comp/counter_0 (SevSeg_comp/counter_0)
-     INV:I->O              1   0.206   0.000  SevSeg_comp/Mcount_counter_lut<0>_INV_0 (SevSeg_comp/Mcount_counter_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  SevSeg_comp/Mcount_counter_cy<0> (SevSeg_comp/Mcount_counter_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<1> (SevSeg_comp/Mcount_counter_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<2> (SevSeg_comp/Mcount_counter_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<3> (SevSeg_comp/Mcount_counter_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<4> (SevSeg_comp/Mcount_counter_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<5> (SevSeg_comp/Mcount_counter_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<6> (SevSeg_comp/Mcount_counter_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<7> (SevSeg_comp/Mcount_counter_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<8> (SevSeg_comp/Mcount_counter_cy<8>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<9> (SevSeg_comp/Mcount_counter_cy<9>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<10> (SevSeg_comp/Mcount_counter_cy<10>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<11> (SevSeg_comp/Mcount_counter_cy<11>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<12> (SevSeg_comp/Mcount_counter_cy<12>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<13> (SevSeg_comp/Mcount_counter_cy<13>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<14> (SevSeg_comp/Mcount_counter_cy<14>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<15> (SevSeg_comp/Mcount_counter_cy<15>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<16> (SevSeg_comp/Mcount_counter_cy<16>)
-     MUXCY:CI->O           1   0.019   0.000  SevSeg_comp/Mcount_counter_cy<17> (SevSeg_comp/Mcount_counter_cy<17>)
-     MUXCY:CI->O           0   0.019   0.000  SevSeg_comp/Mcount_counter_cy<18> (SevSeg_comp/Mcount_counter_cy<18>)
-     XORCY:CI->O           1   0.180   0.000  SevSeg_comp/Mcount_counter_xor<19> (SevSeg_comp/Result<19>)
-     FD:D                      0.102          SevSeg_comp/counter_19
+     FDE:C->Q             10   0.447   0.856  Debouncer_generator[7].Debouncer/counter_out_19 (Debouncer_generator[7].Debouncer/counter_out_19)
+     INV:I->O             20   0.206   1.092  Debouncer_generator[7].Debouncer/counter_out<19>_inv1_INV_0 (Debouncer_generator[7].Debouncer/counter_out<19>_inv)
+     FDE:CE                    0.322          Debouncer_generator[7].Debouncer/counter_out_0
     ----------------------------------------
-    Total                      2.028ns (1.449ns logic, 0.579ns route)
-                                       (71.5% logic, 28.5% route)
+    Total                      2.923ns (0.975ns logic, 1.948ns route)
+                                       (33.4% logic, 66.6% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'SystemClk'
+Timing constraint: Default period analysis for Clock 'clk_out_OBUF'
   Clock period: 15.033ns (frequency: 66.522MHz)
-  Total number of paths / destination ports: 9846397 / 4257
+  Total number of paths / destination ports: 9837357 / 4241
 -------------------------------------------------------------------------
 Delay:               15.033ns (Levels of Logic = 17)
   Source:            PicoCPU_comp/ControlUnit_comp/InstrReg_out_12 (FF)
   Destination:       PicoCPU_comp/DPU_comp/Z_Flag_out (FF)
-  Source Clock:      SystemClk rising
-  Destination Clock: SystemClk rising
+  Source Clock:      clk_out_OBUF rising
+  Destination Clock: clk_out_OBUF rising
 
   Data Path: PicoCPU_comp/ControlUnit_comp/InstrReg_out_12 to PicoCPU_comp/DPU_comp/Z_Flag_out
                                 Gate     Net
@@ -1035,21 +1077,21 @@ Delay:               15.033ns (Levels of Logic = 17)
     ----------------------------------------  ------------
      FDC:C->Q              6   0.447   1.109  PicoCPU_comp/ControlUnit_comp/InstrReg_out_12 (PicoCPU_comp/ControlUnit_comp/InstrReg_out_12)
      LUT6:I0->O           27   0.203   1.585  PicoCPU_comp/ControlUnit_comp_Mram_Instr41 (PicoCPU_comp/ControlUnit_comp/Instr<4>)
-     LUT6:I0->O           28   0.203   1.235  PicoCPU_comp/ControlUnit_comp/_n0674<5>1 (PicoCPU_comp/ControlUnit_comp/_n0674)
-     LUT4:I3->O           17   0.205   1.028  PicoCPU_comp/ControlUnit_comp/Mmux_MemRdAddress2_SW0 (N19)
+     LUT6:I0->O           28   0.203   1.235  PicoCPU_comp/ControlUnit_comp/_n0661<5>1 (PicoCPU_comp/ControlUnit_comp/_n0661)
+     LUT4:I3->O           17   0.205   1.028  PicoCPU_comp/ControlUnit_comp/Mmux_MemRdAddress2_SW0 (N27)
      LUT6:I5->O          243   0.205   2.065  PicoCPU_comp/ControlUnit_comp/Mmux_MemRdAddress2 (PicoCPU_comp/Mem_Rd_Address<1>)
-     LUT6:I5->O            1   0.205   0.000  PicoCPU_comp/Mem_comp/Mmux_Data_Out_1363 (PicoCPU_comp/Mem_comp/Mmux_Data_Out_1363)
-     MUXF7:I1->O           1   0.140   0.000  PicoCPU_comp/Mem_comp/Mmux_Data_Out_12_f7_29 (PicoCPU_comp/Mem_comp/Mmux_Data_Out_12_f730)
-     MUXF8:I0->O           1   0.144   0.808  PicoCPU_comp/Mem_comp/Mmux_Data_Out_10_f8_17 (PicoCPU_comp/Mem_comp/Mmux_Data_Out_10_f818)
-     LUT6:I3->O            1   0.205   0.000  PicoCPU_comp/Mem_comp/Mmux_Data_Out_43 (PicoCPU_comp/Mem_comp/Mmux_Data_Out_43)
-     MUXF7:I1->O           1   0.140   0.000  PicoCPU_comp/Mem_comp/Mmux_Data_Out_3_f7_2 (PicoCPU_comp/Mem_comp/Mmux_Data_Out_3_f73)
-     MUXF8:I1->O           3   0.152   0.651  PicoCPU_comp/Mem_comp/Mmux_Data_Out_2_f8_2 (PicoCPU_comp/MEMDATA<3>)
+     LUT6:I5->O            1   0.205   0.000  PicoCPU_comp/Mem_comp/mux3_133 (PicoCPU_comp/Mem_comp/mux3_133)
+     MUXF7:I1->O           1   0.140   0.000  PicoCPU_comp/Mem_comp/mux3_12_f7 (PicoCPU_comp/Mem_comp/mux3_12_f7)
+     MUXF8:I0->O           1   0.144   0.808  PicoCPU_comp/Mem_comp/mux3_10_f8 (PicoCPU_comp/Mem_comp/mux3_10_f8)
+     LUT6:I3->O            1   0.205   0.000  PicoCPU_comp/Mem_comp/mux3_4 (PicoCPU_comp/Mem_comp/mux3_4)
+     MUXF7:I1->O           1   0.140   0.000  PicoCPU_comp/Mem_comp/mux3_3_f7 (PicoCPU_comp/Mem_comp/mux3_3_f7)
+     MUXF8:I1->O           3   0.152   0.651  PicoCPU_comp/Mem_comp/mux3_2_f8 (PicoCPU_comp/MEMDATA<3>)
      LUT6:I5->O            7   0.205   0.774  PicoCPU_comp/DPU_comp/ALU_comp/Adder_comp/g_counter[3].ADDN/Mxor_NewB_xo<0>1 (PicoCPU_comp/DPU_comp/ALU_comp/Adder_comp/g_counter[3].ADDN/NewB)
-     LUT6:I5->O            1   0.205   0.000  PicoCPU_comp/DPU_comp/ALU_comp/Adder_comp/g_counter[3].ADDN/C_out1_SW0_G (N119)
-     MUXF7:I1->O           2   0.140   0.721  PicoCPU_comp/DPU_comp/ALU_comp/Adder_comp/g_counter[3].ADDN/C_out1_SW0 (N80)
+     LUT6:I5->O            1   0.205   0.000  PicoCPU_comp/DPU_comp/ALU_comp/Adder_comp/g_counter[3].ADDN/C_out1_SW0_G (N127)
+     MUXF7:I1->O           2   0.140   0.721  PicoCPU_comp/DPU_comp/ALU_comp/Adder_comp/g_counter[3].ADDN/C_out1_SW0 (N88)
      LUT5:I3->O            4   0.203   0.684  PicoCPU_comp/DPU_comp/ALU_comp/Adder_comp/g_counter[5].ADDN/C_out1 (PicoCPU_comp/DPU_comp/ALU_comp/Adder_comp/carry<6>)
      LUT6:I5->O            2   0.205   0.721  PicoCPU_comp/DPU_comp/ALU_comp/Command<3>_6 (PicoCPU_comp/DPU_comp/ALU_comp/Command<3>_6)
-     LUT6:I4->O            1   0.203   0.000  PicoCPU_comp/DPU_comp/Mmux_Z_Flag_in1_G (N159)
+     LUT6:I4->O            1   0.203   0.000  PicoCPU_comp/DPU_comp/Mmux_Z_Flag_in1_G (N167)
      MUXF7:I1->O           1   0.140   0.000  PicoCPU_comp/DPU_comp/Mmux_Z_Flag_in1 (PicoCPU_comp/DPU_comp/Z_Flag_in)
      FDCE:D                    0.102          PicoCPU_comp/DPU_comp/Z_Flag_out
     ----------------------------------------
@@ -1077,9 +1119,9 @@ Offset:              1.903ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 11 / 11
+  Total number of paths / destination ports: 19 / 19
 -------------------------------------------------------------------------
-Offset:              4.137ns (Levels of Logic = 1)
+Offset:              4.136ns (Levels of Logic = 1)
   Source:            rst (PAD)
   Destination:       Debouncer_comp/counter_0 (FF)
   Destination Clock: clk rising
@@ -1088,29 +1130,29 @@ Offset:              4.137ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          2162   1.222   2.485  rst_IBUF (rst_IBUF)
+     IBUF:I->O          2154   1.222   2.484  rst_IBUF (rst_IBUF)
      FDC:CLR                   0.430          Debouncer_comp/counter_0
     ----------------------------------------
-    Total                      4.137ns (1.652ns logic, 2.485ns route)
+    Total                      4.136ns (1.652ns logic, 2.484ns route)
                                        (39.9% logic, 60.1% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'SystemClk'
-  Total number of paths / destination ports: 2159 / 2159
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_out_OBUF'
+  Total number of paths / destination ports: 2143 / 2143
 -------------------------------------------------------------------------
-Offset:              4.137ns (Levels of Logic = 1)
+Offset:              4.136ns (Levels of Logic = 1)
   Source:            rst (PAD)
   Destination:       PicoCPU_comp/Mem_comp/Mem_1_7 (FF)
-  Destination Clock: SystemClk rising
+  Destination Clock: clk_out_OBUF rising
 
   Data Path: rst to PicoCPU_comp/Mem_comp/Mem_1_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          2162   1.222   2.485  rst_IBUF (rst_IBUF)
-     FDCE:CLR                  0.430          PicoCPU_comp/Mem_comp/Mem_5_0
+     IBUF:I->O          2154   1.222   2.484  rst_IBUF (rst_IBUF)
+     FDCE:CLR                  0.430          PicoCPU_comp/Mem_comp/Mem_3_0
     ----------------------------------------
-    Total                      4.137ns (1.652ns logic, 2.485ns route)
+    Total                      4.136ns (1.652ns logic, 2.484ns route)
                                        (39.9% logic, 60.1% route)
 
 =========================================================================
@@ -1137,28 +1179,67 @@ Offset:              7.826ns (Levels of Logic = 5)
                                        (49.0% logic, 51.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'SystemClk'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_out_OBUF'
   Total number of paths / destination ports: 676 / 11
 -------------------------------------------------------------------------
-Offset:              10.263ns (Levels of Logic = 6)
-  Source:            PicoCPU_comp/DPU_comp/ACC_out_2 (FF)
+Offset:              9.105ns (Levels of Logic = 6)
+  Source:            PicoCPU_comp/Mem_comp/Mem_4_4 (FF)
   Destination:       SevenSeg<4> (PAD)
-  Source Clock:      SystemClk rising
+  Source Clock:      clk_out_OBUF rising
 
-  Data Path: PicoCPU_comp/DPU_comp/ACC_out_2 to SevenSeg<4>
+  Data Path: PicoCPU_comp/Mem_comp/Mem_4_4 to SevenSeg<4>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q            302   0.447   2.436  PicoCPU_comp/DPU_comp/ACC_out_2 (PicoCPU_comp/DPU_comp/ACC_out_2)
-     LUT6:I0->O            1   0.203   0.684  SevSeg_comp/Mmux_SvSegIn<0>162 (SevSeg_comp/Mmux_SvSegIn<0>161)
+     FDCE:C->Q            13   0.447   1.277  PicoCPU_comp/Mem_comp/Mem_4_4 (PicoCPU_comp/Mem_comp/Mem_4_4)
+     LUT6:I1->O            1   0.203   0.684  SevSeg_comp/Mmux_SvSegIn<0>162 (SevSeg_comp/Mmux_SvSegIn<0>161)
      LUT6:I4->O            1   0.203   0.684  SevSeg_comp/Mmux_SvSegIn<0>163 (SevSeg_comp/Mmux_SvSegIn<0>162)
      LUT6:I4->O            1   0.203   0.827  SevSeg_comp/Mmux_SvSegIn<0>164 (SevSeg_comp/Mmux_SvSegIn<0>163)
      LUT4:I0->O            7   0.203   1.021  SevSeg_comp/Mmux_SvSegIn<0>165 (SevSeg_comp/SvSegIn<3>)
      LUT4:I0->O            1   0.203   0.579  SevSeg_comp/Mram_SevenSeg41 (SevenSeg_4_OBUF)
      OBUF:I->O                 2.571          SevenSeg_4_OBUF (SevenSeg<4>)
     ----------------------------------------
-    Total                     10.263ns (4.033ns logic, 6.230ns route)
-                                       (39.3% logic, 60.7% route)
+    Total                      9.105ns (4.033ns logic, 5.072ns route)
+                                       (44.3% logic, 55.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Debouncer_comp/counter_10'
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Offset:              4.610ns (Levels of Logic = 2)
+  Source:            Debouncer_comp/ShiftReg_2 (FF)
+  Destination:       clk_out (PAD)
+  Source Clock:      Debouncer_comp/counter_10 rising
+
+  Data Path: Debouncer_comp/ShiftReg_2 to clk_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.808  Debouncer_comp/ShiftReg_2 (Debouncer_comp/ShiftReg_2)
+     LUT5:I2->O            1   0.205   0.579  Mmux_clk_out11 (clk_out_OBUF)
+     OBUF:I->O                 2.571          clk_out_OBUF (clk_out)
+    ----------------------------------------
+    Total                      4.610ns (3.223ns logic, 1.387ns route)
+                                       (69.9% logic, 30.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Delay:               5.499ns (Levels of Logic = 3)
+  Source:            ClockSrc (PAD)
+  Destination:       clk_out (PAD)
+
+  Data Path: ClockSrc to clk_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.924  ClockSrc_IBUF (ClockSrc_IBUF)
+     LUT5:I0->O            1   0.203   0.579  Mmux_clk_out11 (clk_out_OBUF)
+     OBUF:I->O                 2.571          clk_out_OBUF (clk_out)
+    ----------------------------------------
+    Total                      5.499ns (3.996ns logic, 1.503ns route)
+                                       (72.7% logic, 27.3% route)
 
 =========================================================================
 
@@ -1173,34 +1254,35 @@ Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 Debouncer_comp/counter_10|    1.165|         |         |         |
 -------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock SystemClk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-SystemClk      |   15.033|         |         |         |
----------------+---------+---------+---------+---------+
-
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.028|         |         |         |
+clk            |    2.923|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_out_OBUF
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.128|         |         |         |
+clk_out_OBUF   |   15.033|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.47 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.62 secs
  
 --> 
 
 
-Total memory usage is 414360 kilobytes
+Total memory usage is 417648 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    6 (   0 filtered)
-Number of infos    :   10 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :   30 (   0 filtered)
 

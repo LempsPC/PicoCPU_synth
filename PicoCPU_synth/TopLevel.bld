@@ -5,7 +5,8 @@ Command Line: /cad/x_14/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
 ise -dd _ngo -nt timestamp -uc PicoCPU_VHDL/Constraints.ucf -p xc6slx16-csg324-3
 TopLevel.ngc TopLevel.ngd
 
-Reading NGO file "/home/lembitu.valdmets/PicoCPU_synth/TopLevel.ngc" ...
+Reading NGO file
+"/home/lembitu.valdmets/Desktop/PicoCPU_synth/PicoCPU_synth/TopLevel.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -28,7 +29,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 408360 kilobytes
+Total memory usage is 408460 kilobytes
 
 Writing NGD file "TopLevel.ngd" ...
 Total REAL time to NGDBUILD completion:  2 sec
